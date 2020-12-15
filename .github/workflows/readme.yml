@@ -25,5 +25,12 @@ jobs:
          go-version: '^1.13.1'
       - name: Fetch README.md
         run: go run main.go
+      - name: Update README.md
+        run: |
+          git config --global user.email "vietanhs0817@gmail.com"
+          git config --global user.name "vietanhduong"
+          git add .
+          git commit -m "Fetch README.md" || echo "No changes to commit"
+          git push
 
      
