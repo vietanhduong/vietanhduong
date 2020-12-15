@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	res, err := http.Get("https://anhdv.dev/api/README.md")
+	res, err := http.Get("https://anhdv.dev/api/README.md?fetch=true")
 	if err != nil {
 		os.Exit(1)
 	}
