@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -18,4 +19,5 @@ func main() {
 	defer f.Close()
 	bytes, _ := ioutil.ReadAll(res.Body)
 	f.Write(bytes)
+	fmt.Printf("Fetch done!")
 }
