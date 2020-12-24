@@ -8,7 +8,7 @@ font:
     italic:
         family: Fixedsys Excelsior 3.01
         style: Italic
-    size: 12.0
+    size: 14.0
 
 custom_cursor_colors: true
 
