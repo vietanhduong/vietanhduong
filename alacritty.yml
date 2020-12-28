@@ -1,14 +1,14 @@
 font:
     normal:
-        family: Fixedsys Excelsior 3.01
+        family: Fixedsys Excelsior 3.01-L2
         style: Regular
     bold:
-        family: Fixedsys Excelsior 3.01
+        family: Fixedsys Excelsior 3.01-L2
         style: Bold
     italic:
-        family: Fixedsys Excelsior 3.01
+        family: Fixedsys Excelsior 3.01-L2
         style: Italic
-    size: 14.0
+    size: 18.0
 
 custom_cursor_colors: true
 
@@ -41,7 +41,7 @@ colors:
     white:   '0xffffff'
 
 shell:
-    program: /usr/bin/zsh
+    program: zsh
     args:
         - --login
 
