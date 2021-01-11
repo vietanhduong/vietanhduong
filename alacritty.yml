@@ -51,6 +51,6 @@ shell:
         - --login
 
 key_bindings:
-    - {key: W, mods: Command, action: Quit}
+    - {key: Q, mods: Command, action: Quit}
     - {key: C, mods: Control|Shift, action: Copy}
     - {key: V, mods: Control|Shift, action: Paste}
