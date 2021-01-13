@@ -1,6 +1,3 @@
-# NVIM config
-# ln -s init.vim ~/.config/nvim/init.vim
-
 set nocompatible
 
 filetype off
