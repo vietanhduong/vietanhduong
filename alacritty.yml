@@ -8,9 +8,15 @@ window:
     padding:
         x: 0
         y: 0
+    glyph_offset:
+        x: 0
+        y: 0
+    use_thin_strokes: true
     dynamic_padding: false
     decorations: full
-    
+
+draw_bold_text_with_bright_colors: true
+
 font:
     normal:
         family: FixedSysEx
@@ -67,3 +73,5 @@ key_bindings:
     - {key: Q, mods: Command, action: Quit}
     - {key: C, mods: Control|Shift, action: Copy}
     - {key: V, mods: Control|Shift, action: Paste}
+
+live_config_reload: true
