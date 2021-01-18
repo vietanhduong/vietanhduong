@@ -19,15 +19,15 @@ draw_bold_text_with_bright_colors: true
 
 font:
     normal:
-        family: FixedSysEx
+        family: Source Code Pro for Powerline
         style: Regular
     bold:
-        family: FixedSysEx
+        family: Source Code Pro for Powerline
         style: Bold
     italic:
-        family: FixedSysEx
+        family: Source Code Pro for Powerline
         style: Italic
-    size: 14.0
+        size: 12.0
 
 custom_cursor_colors: true
 # Colors (Base16 Default Dark)
