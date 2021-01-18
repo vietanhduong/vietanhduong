@@ -27,7 +27,7 @@ font:
     italic:
         family: SF Mono
         style: Italic
-        size: 12.0
+    size: 14.0
 
 custom_cursor_colors: true
 # Colors (Base16 Default Dark)
