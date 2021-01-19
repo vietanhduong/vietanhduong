@@ -11,6 +11,7 @@ window:
     dynamic_padding: false
     decorations: full
 
+background_opacity: 0.9 
 draw_bold_text_with_bright_colors: true
 
 font:
