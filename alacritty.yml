@@ -16,13 +16,13 @@ draw_bold_text_with_bright_colors: true
 
 font:
     normal:
-        family: Source Code Pro for Powerline
+        family: SF Mono
         style: Medium 
     bold:
-        family: Source Code Pro for Powerline
+        family: SF Mono
         style: Bold
     italic:
-        family: Source Code Pro for Powerline
+        family: SF Mono
         style: Italic
     size: 13.0
     offset:
