@@ -45,7 +45,7 @@ inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>^
 
 set hidden
-
+set mouse=nicr
 set ttyfast
 
 set laststatus=2
