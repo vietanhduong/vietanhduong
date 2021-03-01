@@ -17,6 +17,10 @@ set visualbell
 set encoding=utf-8
 
 set wrap
+set linebreak
+set breakindent
+set showbreak=ͱ
+
 set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
