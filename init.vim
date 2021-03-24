@@ -33,7 +33,7 @@ set hlsearch                    " Highlight found searches
 set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
 set autoindent
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=2 shiftwidth=2 expandtab
 set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 
@@ -43,11 +43,7 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 " Search and Replace
-nmap <Leader>s :%s//g<Left><Left>
-
-" Leader key is like a command prefix. 
-let mapleader='z'
-let maplocalleader='\'
+nmap <leader>s :%s//g<Left><Left>
 
 let g:python_host_prog="/usr/local/bin/python2.7"
 
@@ -146,3 +142,4 @@ nmap <c-h> :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 nmap <leader>0 :set invnumber<CR>
+
