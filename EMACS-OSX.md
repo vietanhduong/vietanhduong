@@ -40,3 +40,26 @@ To `unload`:
 $ launchctl unload -w ~/Library/LaunchAgents/my.emacs.plist
 ``` 
 
+Script for start emacs form terminal:
+```bash
+#!/bin/bash
+
+if [ "$1" == "help" ] || [ "$1" == " — help" ] || [ "$1" == "-h" ]; then
+ echo "A dumb script to deal with Emacs Client Frame"
+ echo "Open a file in the existing frame or create a frame if none"
+ echo "If multiple frames are open, the file will be opened in the last focused frame"
+ echo ""
+ echo "usage: em <name of file> [w]"
+ echo " — \"w\" forces the creation of a frame even if there is already one"
+exit
+fi
+
+state="$(emacsclient -qn -e "(if (> (length (frame-list)) 1) 't)")"
+if [ "$state" == "" ] || [ "$state" == "nil" ] || [ "$2" == "w" ] ; then
+ emacsclient -a '' -cqn $1
+else
+ emacsclient -qn $1
+fi
+```
+
+Make sure you grained execute mode for this file `chmod +x ec`. You should place in `/usr/local/bin`.
