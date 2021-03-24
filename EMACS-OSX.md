@@ -71,3 +71,17 @@ Make sure you grained execute mode for this file `chmod +x ec`. You should place
 3. Move the alias to `Applications` folder.
 
 Done!
+
+### Create AppleScript
+```AppleScript
+try
+	tell application "Terminal"
+		do shell script "/usr/local/bin/ec"
+	end tell
+on error
+	tell application "Terminal"
+		do shell script "/usr/local/bin/emacs --daemon"
+		do shell script "/usr/local/bin/ec"
+	end tell
+end try
+```
