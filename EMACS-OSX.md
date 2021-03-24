@@ -66,7 +66,7 @@ Make sure you grained execute mode for this file `chmod +x ec`. You should place
 
 ### Fix not found emacs in spotlight
 
-1. Open emacs folder. `open /usr/local/Cellar/[emacs-version]
+1. Open emacs folder. `open /usr/local/Cellar/[emacs-version]`
 2. Right click on `Emacs.app` >> Make alias
 3. Move the alias to `Applications` folder.
 
