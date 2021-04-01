@@ -1,3 +1,3 @@
-Now I am a *Software engineer* at a technology company in Vietnam. You can look around my blog. If you want to fork it you can contact me because it's **private**. Maybe it  will be public soon.
+<div style="text-align:center"><img align="center" src="https://media.giphy.com/media/cNNEOwOQwWveFLxw6J/giphy.gif" /></div>
 
-*Thanks you for visiting me. Have a nice day!*
+~~ *Give Away Bug* ~~
