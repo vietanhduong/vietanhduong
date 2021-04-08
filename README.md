@@ -1,4 +1,5 @@
-<p align="center" style="font-size: 2.5rem;">
-  <img align="center" src="https://media.giphy.com/media/cNNEOwOQwWveFLxw6J/giphy.gif" />
+<p align="center">
+  <img align="center" width="200" src="https://media.giphy.com/media/cNNEOwOQwWveFLxw6J/giphy.gif" />
 </p>
-<h2 align="center">~*~ IF IT WORKS DON'T TOUCH IT ~*~</h2>
+
+<h2 align="center" style="color:blue"></h2>
