@@ -117,13 +117,11 @@ if command_exists terraform; then
   complete -o nospace -C /usr/local/bin/terraform terraform
 fi
 
-
 if command_exists aws; then
   ## AWS CLI
   complete -C '/usr/local/bin/aws_completer' aws
   export PATH=/usr/local/aws/bin:$PATH
 fi
-
 
 if command_exists kubectl; then
   ## KUBECTL
