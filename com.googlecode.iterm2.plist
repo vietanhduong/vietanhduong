@@ -7,7 +7,7 @@
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
-	<true/>
+	<false/>
 	<key>ConvertTabDragToWindowDragForSolitaryTabInCompactOrMinimalTheme</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -4610,7 +4610,7 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TmuxUsesDedicatedProfile</key>
-	<false/>
+	<true/>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
