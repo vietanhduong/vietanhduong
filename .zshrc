@@ -102,8 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if ! command -v terraform &> /dev/null
-then
+## =============================
+command_exists () {
+  type "$1" &> /dev/null ;
+}
+## =============================
+
+
+if command_exists terraform; then
   ## TERAFORM
   alias tf="terraform"
 
@@ -112,16 +118,14 @@ then
 fi
 
 
-if ! command -v aws &> /dev/null
-then
+if command_exists aws; then
   ## AWS CLI
   complete -C '/usr/local/bin/aws_completer' aws
   export PATH=/usr/local/aws/bin:$PATH
 fi
 
 
-if ! command -v kubectl &> /dev/null
-then
+if command_exists kubectl; then
   ## KUBECTL
   export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
   [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
@@ -131,8 +135,7 @@ then
   complete -F __start_kubectl k
 fi
 
-if ! command -v gcloud &> /dev/null
-then
+if command_exists gcloud; then
   ## GCLOUD
   source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
   source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
