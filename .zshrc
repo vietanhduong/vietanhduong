@@ -3,21 +3,16 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 git_branch_test_color() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
   if [ -n "${ref}" ]; then
-    if [ -n "$(git status --porcelain)" ]; then
-      local gitstatuscolor='%F{red}'
-    else
-      local gitstatuscolor='%F{green}'
-    fi
-    echo "${gitstatuscolor} (${ref})"
+    echo " (${ref})"
   else
     echo ""
   fi
 }
 
 setopt PROMPT_SUBST
-#PROMPT="%B%~ $(git_branch_test_color)$ %b"
 PROMPT='%B%9c$(git_branch_test_color)%F{none} $%b '
 
+PS4='%D{%s.%9.}+%N:%i> '
 
 plugins=(git zsh-syntax-highlighting)
 
