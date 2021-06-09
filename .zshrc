@@ -10,7 +10,7 @@ git_branch_test_color() {
 }
 
 setopt PROMPT_SUBST
-PROMPT='%B%9c$(git_branch_test_color)%F{none} $%b '
+PROMPT='%{$fg[yellow]%}%B%9c$(git_branch_test_color)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
 
 PS4='%D{%s.%9.}+%N:%i> '
 
