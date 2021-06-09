@@ -8,6 +8,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 export GPG_TTY=$(tty)
 export EDITOR='vim'
+export TERM=screen-256color
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
