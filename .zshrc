@@ -23,6 +23,8 @@ export TERM=screen-256color
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
+export PATH=/usr/local/sbin:$PATH
+
 ## =============================
 command_exists () {
   type "$1" &> /dev/null ;
