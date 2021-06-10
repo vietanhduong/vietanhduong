@@ -9,10 +9,7 @@ git_branch_test_color() {
   fi
 }
 
-setopt PROMPT_SUBST
 PROMPT='%{$fg[yellow]%}%B%9c$(git_branch_test_color)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
-
-PS4='%D{%s.%9.}+%N:%i> '
 
 plugins=(git zsh-syntax-highlighting)
 
