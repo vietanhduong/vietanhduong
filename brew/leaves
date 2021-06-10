@@ -1,7 +1,6 @@
 automake
 md5sha1sum
 node
-openvpn
 telnet
 tmux
 vim
