@@ -1,6 +1,6 @@
 export ZSH="/Users/${USER}/.oh-my-zsh"
 
-git_branch_test_color() {
+git_branch() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
   if [ -n "${ref}" ]; then
     echo " (${ref})"
@@ -9,18 +9,17 @@ git_branch_test_color() {
   fi
 }
 
-PROMPT='%{$fg[yellow]%}%B%9c$(git_branch_test_color)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
-
+PROMPT='%(!.%{$fg[red]%}.%{$fg[yellow]%})%B%9c$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
+export TERM=screen-256color
+export GPG_TTY=$(tty)
+export EDITOR='vim'
+export PATH=/usr/local/sbin:$PATH
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-export GPG_TTY=$(tty)
-export EDITOR='vim'
-export TERM=screen-256color
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-export PATH=/usr/local/sbin:$PATH
 
 ## =============================
 command_exists () {
