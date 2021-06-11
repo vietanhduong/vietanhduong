@@ -52,7 +52,7 @@ if command_exists kubectl; then
 fi
 
 ## GCLOUD
-if command_exists gcloud; then
+if [ -d "/usr/local/Caskroom/google-cloud-sdk" ]; then
   source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
   source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 fi
