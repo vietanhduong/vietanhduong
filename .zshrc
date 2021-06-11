@@ -10,7 +10,7 @@ git_branch() {
 }
 
 PROMPT='%(!.%{$fg[red]%}.%{$fg[yellow]%})%B%9c$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
-export TERM=screen-256color
+export TERM="xterm-256color"
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
@@ -19,7 +19,6 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-
 
 ## =============================
 command_exists () {
