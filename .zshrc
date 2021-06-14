@@ -19,6 +19,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias tconfig="vim ~/.tmux.conf"
 
 ## =============================
 command_exists () {
