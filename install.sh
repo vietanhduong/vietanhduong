@@ -6,6 +6,8 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | 
 # install what I need with brew
 ./brew/dumps.sh
 
+# install Hack fonts
+cp -r ./fonts/hack/* ~/Library/fonts
 
 # install oh-my-zsh
 curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
