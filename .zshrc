@@ -20,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tconfig="vim ~/.tmux.conf"
+alias ls="ls -lGah"
 
 ## =============================
 command_exists () {
