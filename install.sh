@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# install brew first
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash 
-
-# install what I need with brew
-./brew/dumps.sh
+# install brew packages
+xargs brew install < ./brew/leaves
+xargs brew install --cask < ./brew/casks
 
 # install Hack fonts
 cp -r ./fonts/hack/* ~/Library/fonts
@@ -18,7 +16,3 @@ sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)
 # link config
 ln -s .tmux.conf ~/.tmux.conf
 ln -s .vimrc ~/.vimrc
-
-# make sure .zshrc already removed
-rm -f ~/.zshrc
-ln -s .zshrc ~/.zshrc
