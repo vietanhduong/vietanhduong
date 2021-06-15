@@ -8,3 +8,4 @@ vim
 wget
 reattach-to-user-namespace
 tree
+gnupg
