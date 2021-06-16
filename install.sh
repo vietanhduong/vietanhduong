@@ -19,3 +19,14 @@ ln -s ./.vimrc ~/.vimrc
 
 # install plugins for zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# git config
+git config --global user.email "vietanhs0817@gmail.com"
+git config --global user.name "Viet Anh Duong"
+git config --global commit.gpgsign true
+git config --global gpg.program gpg
+
+# git config --global user.signingkey <place your key>
+
+
+
