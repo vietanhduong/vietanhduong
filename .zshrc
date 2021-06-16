@@ -22,6 +22,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tconfig="vim ~/.tmux.conf"
 alias ls="ls -lGah"
 alias reshell="exec $SHELL"
+alias hs="history"
 
 ## =============================
 command_exists () {
