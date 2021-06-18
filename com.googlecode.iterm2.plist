@@ -3741,6 +3741,15 @@
 			<key>Text</key>
 			<string>clear\n</string>
 		</dict>
+		<key>0x72-0x100000-0xf</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x9-0x40000</key>
 		<dict>
 			<key>Action</key>
