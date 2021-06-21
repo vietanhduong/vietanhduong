@@ -9,7 +9,7 @@ git_branch() {
   fi
 }
 
-PROMPT='%(!.%{$fg[red]%}.%{$fg[yellow]%})%B%9c$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
+PROMPT='%(!.%{$fg[red]%}.%{$fg[green]%})%B[%*] %{$fg[yellow]%}%9c$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
 export TERM="xterm-256color"
 export GPG_TTY=$(tty)
 export EDITOR='vim'
