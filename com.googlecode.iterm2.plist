@@ -4034,7 +4034,7 @@
 				<real>0.87058823529411766</real>
 			</dict>
 			<key>Automatically Log</key>
-			<true/>
+			<false/>
 			<key>BM Growl</key>
 			<true/>
 			<key>Background Color</key>
