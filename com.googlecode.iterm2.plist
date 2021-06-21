@@ -4033,6 +4033,8 @@
 				<key>Red Component</key>
 				<real>0.87058823529411766</real>
 			</dict>
+			<key>Automatically Log</key>
+			<true/>
 			<key>BM Growl</key>
 			<true/>
 			<key>Background Color</key>
@@ -4566,13 +4568,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.028176307678222656</real>
+									<real>0.047058823529411764</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>1</real>
+									<real>0.7686274509803922</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<real>0.94117647058823528</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -4612,13 +4614,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.027450980392156862</real>
+									<real>0.047058823529411764</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>1</real>
+									<real>0.7686274509803922</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<real>0.94117647058823528</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -4658,13 +4660,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.027450980392156862</real>
+									<real>0.047058823529411764</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>1</real>
+									<real>0.7686274509803922</real>
 									<key>Red Component</key>
-									<real>0.0</real>
+									<real>0.94117647058823528</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
