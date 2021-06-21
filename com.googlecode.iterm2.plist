@@ -3862,6 +3862,8 @@
 			<string></string>
 		</dict>
 	</dict>
+	<key>HTMLTabTitles</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -4561,20 +4563,31 @@
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<string>0</string>
-								<key>path</key>
-								<string>username</string>
+								<key>shared background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.0</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.0</real>
+									<key>Red Component</key>
+									<real>0.0</real>
+								</dict>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.047058823529411764</real>
+									<real>0.047058824449777603</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.7686274509803922</real>
+									<real>0.76862746477127075</real>
 									<key>Red Component</key>
-									<real>0.94117647058823528</real>
+									<real>0.94117647409439087</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -4607,20 +4620,31 @@
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<string>0</string>
-								<key>path</key>
-								<string>hostname</string>
+								<key>shared background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.0</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.0</real>
+									<key>Red Component</key>
+									<real>0.0</real>
+								</dict>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.047058823529411764</real>
+									<real>0.047058824449777603</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.7686274509803922</real>
+									<real>0.76862746477127075</real>
 									<key>Red Component</key>
-									<real>0.94117647058823528</real>
+									<real>0.94117647409439087</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -4655,18 +4679,31 @@
 								<real>+infinity</real>
 								<key>minwidth</key>
 								<string>0</string>
+								<key>shared background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.0</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.0</real>
+									<key>Red Component</key>
+									<real>0.0</real>
+								</dict>
 								<key>shared text color</key>
 								<dict>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.047058823529411764</real>
+									<real>0.047058824449777603</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.7686274509803922</real>
+									<real>0.76862746477127075</real>
 									<key>Red Component</key>
-									<real>0.94117647058823528</real>
+									<real>0.94117647409439087</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -4790,15 +4827,19 @@
 	<key>Selection Respects Soft Boundaries</key>
 	<true/>
 	<key>SeparateStatusBarsPerPane</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
+	<true/>
+	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.18596605219896239</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
-	<true/>
+	<false/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>4</integer>
 	<key>TabViewType</key>
