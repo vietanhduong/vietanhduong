@@ -20,6 +20,9 @@ ln -s .vimrc /Users/${USER}/.vimrc
 # install plugins for zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# download iterm shell integration
+curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
+
 # git config
 git config --global user.email "vietanhs0817@gmail.com"
 git config --global user.name "Viet Anh Duong"
