@@ -4558,6 +4558,40 @@
 				<array>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarSpringComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>iTermStatusBarSpringComponentSizeMultipleKey</key>
+								<real>1</real>
+								<key>shared background color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.0</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.0</real>
+									<key>Red Component</key>
+									<real>0.0</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+								<key>auto-rainbow style</key>
+								<integer>0</integer>
+								<key>remove empty components</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarUsernameComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -4568,7 +4602,7 @@
 								<key>base: priority</key>
 								<real>5</real>
 								<key>maxwidth</key>
-								<real>+infinity</real>
+								<real>150</real>
 								<key>minwidth</key>
 								<string>0</string>
 								<key>shared background color</key>
@@ -4625,7 +4659,7 @@
 								<key>base: priority</key>
 								<real>5</real>
 								<key>maxwidth</key>
-								<real>+infinity</real>
+								<real>150</real>
 								<key>minwidth</key>
 								<string>0</string>
 								<key>shared background color</key>
@@ -4684,7 +4718,7 @@
 								<key>localize</key>
 								<integer>0</integer>
 								<key>maxwidth</key>
-								<real>+infinity</real>
+								<real>150</real>
 								<key>minwidth</key>
 								<string>0</string>
 								<key>shared background color</key>
@@ -4853,7 +4887,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.18596605219896239</real>
 	<key>StatusBarPosition</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>TabStyleWithAutomaticOption</key>
