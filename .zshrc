@@ -69,3 +69,7 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+compinit
