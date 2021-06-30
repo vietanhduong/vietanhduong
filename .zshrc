@@ -16,7 +16,7 @@ export TERM=xterm-256color
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
-plugins=(git zsh-syntax-highlighting grc)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 alias zconfig="vim ~/.zshrc"
