@@ -24,6 +24,12 @@ ln -s "${_curdir}"/.zshrc
 ln -s "${_curdir}"/.vimrc
 ln -s "${_curdir}"/.tmux.conf
 
+cd $_curdir
+
+# update vim
+mkdir -p $HOME/.vim/colors
+cp -r colors $HOME/.vim/
+
 # install plugins for zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
