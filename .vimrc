@@ -8,8 +8,7 @@ set hlsearch
 set ruler
 set backspace=indent,eol,start
 
-set background=dark
-colorscheme gruvbox8_hard
+colorscheme ron 
 
 " change line number color
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
