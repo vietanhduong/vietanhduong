@@ -25,6 +25,7 @@ alias tconfig="vim ~/.tmux.conf"
 alias ls="ls -lGah"
 alias reshell="exec $SHELL"
 alias hs="history"
+alias oapp="open -a"
 
 ## =============================
 command_exists () {
