@@ -12,7 +12,6 @@ git_branch() {
 PROMPT='%(!.%{$fg[red]%}.%{$fg[cyan]%})%B[%*] %{$fg[yellow]%}%9c%{$fg[magenta]%}$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
 
 export CLICOLOR=1
-export TERM=xterm-256color
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH

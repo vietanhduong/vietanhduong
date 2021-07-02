@@ -4063,10 +4063,14 @@
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>0.0</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.85098039215686272</real>
+				<real>0.85919135808944702</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -4128,7 +4132,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.72176361083984375</real>
+				<real>0.65000000000000002</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -4143,12 +4147,16 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.85882352941176465</real>
+				<real>0.88743287324905396</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.035294117647058823</real>
+				<real>0.1812165379524231</real>
 				<key>Red Component</key>
-				<real>0.12549019607843137</real>
+				<real>0.17326384782791138</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -4201,16 +4209,12 @@
 			<false/>
 			<key>Background Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.094117647058823528</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.094117647058823528</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.094117647058823528</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -4223,7 +4227,7 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.1491314172744751</real>
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
@@ -4315,16 +4319,12 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>0.94901960784313721</real>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.94901960784313721</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.94901960784313721</real>
 			</dict>
 			<key>Guid</key>
 			<string>444325DC-851D-4841-B8C2-B78FDF12730E</string>
@@ -4680,22 +4680,22 @@
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.13333333333333333</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.92941176470588238</real>
+				<real>0.0</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.52941176470588236</real>
+				<real>1</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.086274509803921567</real>
+				<real>0.86945539712905884</real>
 				<key>Red Component</key>
-				<real>0.0039215686274509803</real>
+				<real>0.75742977857589722</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -4933,19 +4933,6 @@
 			</dict>
 			<key>Sync Title</key>
 			<false/>
-			<key>Tab Color</key>
-			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
-				<key>Blue Component</key>
-				<real>0.11708164766605478</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
-				<key>Green Component</key>
-				<real>0.61271762847900391</real>
-				<key>Red Component</key>
-				<real>0.0</real>
-			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -6017,10 +6004,10 @@
 		</data>
 	</array>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>kCPKUseSystemColorPicker</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
