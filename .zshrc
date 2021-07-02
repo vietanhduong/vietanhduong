@@ -33,12 +33,13 @@ command_exists () {
 }
 ## =============================
 
+# load bash autocomplete
+autoload -U +X bashcompinit && bashcompinit
 
 ## TERAFORM
 if command_exists terraform; then
   alias tf="terraform"
 
-  autoload -U +X bashcompinit && bashcompinit
   complete -o nospace -C /usr/local/bin/terraform terraform
 fi
 
