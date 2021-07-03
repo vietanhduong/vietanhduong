@@ -4239,12 +4239,16 @@
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
 				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.19835099577903748</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.016804177314043045</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -4820,12 +4824,16 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.019607843137254902</real>
+				<real>1</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.22352941176470587</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.031372549019607843</real>
+				<real>0.0</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
