@@ -23,6 +23,7 @@ jobs:
         run: tree -H '.' -L 1 --noreport --charset utf-8 > index.html
       - name: Commit report
         run: |
+          [[ -z "$(git status --porcelain)" ]] && exit 0
           git config --global user.name 'Viet Anh Duong'
           git config --global user.email 'vietanhduong@users.noreply.github.com'
           git commit -am "Automated publish"
