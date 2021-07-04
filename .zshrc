@@ -37,7 +37,6 @@ autoload -U +X bashcompinit && bashcompinit
 ## TERAFORM
 if command_exists terraform; then
   alias tf="terraform"
-
   complete -o nospace -C /usr/local/bin/terraform terraform
 fi
 
