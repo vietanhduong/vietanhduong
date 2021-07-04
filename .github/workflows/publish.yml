@@ -24,6 +24,11 @@ jobs:
 
       - name: Commit report
         run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "Nothing change to commit"
+            exit 0
+          fi
+
           git config --global user.name 'Viet Anh Duong'
           git config --global user.email 'vietanhduong@users.noreply.github.com'
           git commit -am "Automated publish"
