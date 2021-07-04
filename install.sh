@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# clone repo
+git clone git@github.com:vietanhduong/vietanhduong.git vietanhduong
+cd vietanhduong
+
 # install brew packages
 xargs brew install <./brew/leaves
 xargs brew install --cask <./brew/casks
