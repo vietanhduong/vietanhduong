@@ -6,13 +6,14 @@
 # clone repo
 git clone git@github.com:vietanhduong/vietanhduong.git vietanhduong && cd $_
 
+# exit if clone repo failed
+[[ "$?" != "0" ]] && exit 1
+
 # make sure brew already installed
 if ! command -v "brew" &> /dev/null; then
   echo "brew does not install, please install brew first!" >&2
   exit 1
 fi
-
-echo "Finished!"; exit 0
 
 # install brew packages
 xargs brew install <./brew/leaves
