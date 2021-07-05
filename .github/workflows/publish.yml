@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Fetch current dir
-        run: tree -aH '.' -L 1 --noreport --charset utf-8 > index.html
+        run: tree -I '.git|.DS_Store' -aH '.' --noreport --charset utf-8 > index.html
 
       - name: Commit report
         run: |
@@ -25,6 +25,9 @@ jobs:
             echo "Nothing change to commit"
             exit 0
           fi
+
+          # replace url to git raw
+          sed -i 's/href="./href="https:\/\/raw.githubusercontent.com\/vietanhduong\/vietanhduong\/main/g' index.html
 
           git config --global user.name 'Viet Anh Duong'
           git config --global user.email 'vietanhduong@users.noreply.github.com'
