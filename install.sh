@@ -1,8 +1,18 @@
 #!/bin/bash
 
+# easy install
+# curl -sSLf https://config.anhdv.dev/install.sh | bash
+
 # clone repo
-git clone git@github.com:vietanhduong/vietanhduong.git vietanhduong
-cd vietanhduong
+git clone git@github.com:vietanhduong/vietanhduong.git vietanhduong && cd $_
+
+# make sure brew already installed
+if ! command -v "brew" &> /dev/null; then
+  echo "brew does not install, please install brew first!" >&2
+  exit 1
+fi
+
+echo "Finished!"; exit 0
 
 # install brew packages
 xargs brew install <./brew/leaves
@@ -48,5 +58,6 @@ git config --global gpg.program gpg
 
 # git config --global user.signingkey <place your key>
 
+# disable press and hold on mac os
 defaults write -g ApplePressAndHoldEnabled -bool false
 
