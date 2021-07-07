@@ -21,13 +21,13 @@ jobs:
 
       - name: Commit report
         run: |
+          # replace url to git raw
+          sed -i 's/href="./href="https:\/\/raw.githubusercontent.com\/vietanhduong\/vietanhduong\/main/g' index.html
+
           if [[ $(git status --porcelain --untracked-files=no | wc -l) -eq 0 ]]; then
             echo "Nothing change to commit"
             exit 0
           fi
-
-          # replace url to git raw
-          sed -i 's/href="./href="https:\/\/raw.githubusercontent.com\/vietanhduong\/vietanhduong\/main/g' index.html
 
           git config --global user.name 'Viet Anh Duong'
           git config --global user.email 'vietanhduong@users.noreply.github.com'
