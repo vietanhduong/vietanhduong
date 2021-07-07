@@ -21,7 +21,7 @@ jobs:
 
       - name: Commit report
         run: |
-          if [[ -z "$(git status --porcelain)" ]]; then
+          if [[ $(git status --porcelain --untracked-files=no | wc -l) -eq 0 ]]; then
             echo "Nothing change to commit"
             exit 0
           fi
