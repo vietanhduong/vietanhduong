@@ -4,7 +4,7 @@
 # curl -sSLf https://config.anhdv.dev/install.sh | bash
 
 # clone repo
-git clone git@github.com:vietanhduong/vietanhduong.git vietanhduong && cd $_
+git clone https://github.com/vietanhduong/vietanhduong.git vietanhduong && cd $_
 
 # exit if clone repo failed
 [[ "$?" != "0" ]] && exit 1
