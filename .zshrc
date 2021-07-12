@@ -53,6 +53,7 @@ if command_exists kubectl; then
   
   source <(kubectl completion zsh | sed '/_bash_comp/ s/^#*/#/')
   alias k="kubectl"
+  alias kctx="kubectl config use-context"
   complete -F __start_kubectl k
 fi
 
