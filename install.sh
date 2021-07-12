@@ -29,15 +29,15 @@ curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools
 sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)
 
 # save current dir
-_curdir="$(pwd)"
+_curdir="$PWD"
 
 # goto $HOME
 cd $HOME
 
 # link config
-ln -s "${_curdir}"/.zshrc
-ln -s "${_curdir}"/.vimrc
-ln -s "${_curdir}"/.tmux.conf
+ln -s $_curdir/.zshrc
+ln -s $_curdir/.vimrc
+ln -s $_curdir/.tmux.conf
 
 cd $_curdir
 
