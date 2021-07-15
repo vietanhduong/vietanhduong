@@ -1,18 +1,15 @@
-Hi there!
+### Hi there!
+### Welcome to my GitHub Profile :)
 
-Welcome to my GitHub Profile :)
-
-* Checkout my résumé
-  
-  https://resume.anhdv.dev/
+* Checkout **my résumé** at <a href="https://resume.anhdv.dev/" target="_blank">https://resume.anhdv.dev/</a>
 
 * Install my configuration
-
-  step 1: install brew
-   
-     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  * **Step 1:** install brew
+  ``` bash 
+  $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
   
-  step 2: install configuration
-  
-     $ curl -sSfL https://config.anhdv.dev/install.sh | bash
-    
+  * **step 2:** install configuration
+  ``` bash
+  $ curl -sSfL https://config.anhdv.dev/install.sh | bash
+  ```  
