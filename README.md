@@ -6,10 +6,10 @@
 * Install my configuration
   * **Step 1:** install brew
   ``` bash 
-  $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
   
-  * **step 2:** install configuration
+  * **Step 2:** install configuration
   ``` bash
-  $ curl -sSfL https://config.anhdv.dev/install.sh | bash
+  curl -sSfL https://config.anhdv.dev/install.sh | bash
   ```  
