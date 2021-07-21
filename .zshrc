@@ -11,10 +11,11 @@ git_branch() {
 
 PROMPT='%(!.%{$fg[red]%}.%{$fg[cyan]%})%B[%*] %{$fg[yellow]%}%9c%{$fg[magenta]%}$(git_branch)%F{none} %{$fg[green]%}$%b %{$reset_color%}% '
 
-export CLICOLOR=1
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
