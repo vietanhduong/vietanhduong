@@ -8,7 +8,7 @@ set hlsearch
 set ruler
 set backspace=indent,eol,start
 
-colorscheme ron 
+colorscheme jellybeans 
 
 " change line number color
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
