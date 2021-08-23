@@ -17,4 +17,4 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 highlight Comment ctermfg=Green
 
 " visual color
-highlight Visual cterm=bold ctermbg=241 ctermfg=NONE
+highlight Visual cterm=bold ctermbg=236 ctermfg=NONE
