@@ -63,3 +63,4 @@ git config --global gpg.program gpg
 # disable press and hold on mac os
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+sudo xcodebuild -license accept
