@@ -19,11 +19,9 @@ fi
 xargs brew install <./brew/leaves
 xargs brew install --cask <./brew/casks
 
-# install Hack fonts
-cp -r ./fonts/hack/* ~/Library/fonts
-
-# install Liberation Mono fonts
-cp -r ./fonts/liberation-mono/* ~/Library/fonts
+# install font
+APPLY_FONT=consolas
+cp -r ./fonts/$APPLY_FONT/* ~/Library/fonts
 
 # install oh-my-zsh
 curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
