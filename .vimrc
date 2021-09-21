@@ -12,7 +12,7 @@ set backspace=indent,eol,start
 colorscheme ron
 
 " change line number color
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+" highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
 " hook set comment color is green
 highlight Comment ctermfg=Green
