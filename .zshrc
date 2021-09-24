@@ -69,6 +69,6 @@ if command_exists vault; then
   complete -o nospace -C /usr/local/bin/vault vault
 fi
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
