@@ -19,3 +19,9 @@ highlight Comment ctermfg=Green
 
 " visual color
 highlight Visual cterm=bold ctermbg=236 ctermfg=NONE
+
+" map Ctrl + h i j k to switch panel
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
