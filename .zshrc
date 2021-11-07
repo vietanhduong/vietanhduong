@@ -26,6 +26,11 @@ alias resh="exec $SHELL"
 alias hs="history"
 alias oapp="open -a"
 alias ll="exa -lag"
+alias ta="tmux a -t"
+alias tl="tmux ls"
+alias tk="tmux kill-session -t"
+alias tka="tmux kill-session -a"
+alias tkat="tmux kill-session -at"
 
 ## =============================
 command_exists () {
