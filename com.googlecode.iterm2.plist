@@ -5695,7 +5695,7 @@
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
-	<false/>
+	<true/>
 	<key>UseColorfgbgFallback</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
