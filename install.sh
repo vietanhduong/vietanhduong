@@ -39,6 +39,7 @@ cd $HOME
 ln -s $_curdir/.zshrc
 ln -s $_curdir/.vimrc
 ln -s $_curdir/.tmux.conf
+ln -s $_curdir/alacritty.yml .alacritty.yml
 
 cd $_curdir
 
