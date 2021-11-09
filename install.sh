@@ -20,7 +20,7 @@ xargs brew install <./brew/leaves
 xargs brew install --cask <./brew/casks
 
 # install font
-APPLY_FONT=roboto-mono
+APPLY_FONT=hack
 cp -r ./fonts/$APPLY_FONT/* ~/Library/fonts
 
 # install oh-my-zsh
