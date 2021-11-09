@@ -65,12 +65,12 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: Roboto Mono 
-    style: Regular 
+    style: Light 
 
   # The bold font face
   bold:
     family: Roboto Mono 
-    style: Medium
+    style: Regular 
 
   italic:
     family: Roboto Mono 

@@ -64,4 +64,7 @@ git config --global gpg.program gpg
 # disable press and hold on mac os
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# enable font smoothing
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+
 sudo xcodebuild -license accept
