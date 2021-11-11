@@ -65,7 +65,7 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: Inconsolata 
-    style: Light 
+    style: Regular 
 
   # The bold font face
   bold:
