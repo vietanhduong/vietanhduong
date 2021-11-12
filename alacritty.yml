@@ -38,7 +38,7 @@ window:
   # - transparent: title bar, transparent background and title bar buttons
   # - buttonless: title bar, transparent background, but no title bar buttons
   decorations: full 
-
+  dynamic_padding: true
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
