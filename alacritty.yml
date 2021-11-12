@@ -195,7 +195,8 @@ bell:
   duration: 0
 
 # Background opacity
-background_opacity: 1.0
+# Issue: https://github.com/alacritty/alacritty/issues/4474
+background_opacity: 0.999
 
 # Key bindings
 #
