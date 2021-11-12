@@ -8,6 +8,8 @@ set hlsearch
 set ruler
 set backspace=indent,eol,start
 
+set pastetoggle=<F3>
+
 " colorscheme jellybeans 
 colorscheme ron
 
