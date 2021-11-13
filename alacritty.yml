@@ -106,10 +106,10 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: true 
+  # use_thin_strokes: true 
 
 # When true, bold text is drawn using the bright variant of colors.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true 
 
 # Color scheme setting
 colors:  
