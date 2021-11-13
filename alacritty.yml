@@ -64,26 +64,26 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: Inconsolata 
+    family: Consolas 
     style: Regular 
 
   # The bold font face
   bold:
-    family: Inconsolata 
-    style: Medium 
+    family: Consolas 
+    style: Bold 
 
   italic:
-    family: Inconsolata 
+    family: Consolas 
     style: Italic
 
   # Point size of the font
-  size: 16.0 
+  size: 15.0 
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 1
-    y: 2
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
@@ -106,7 +106,7 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: true
+  use_thin_strokes: true 
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: false
