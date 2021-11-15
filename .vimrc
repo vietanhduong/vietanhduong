@@ -10,8 +10,8 @@ set backspace=indent,eol,start
 
 set pastetoggle=<F3>
 
-" colorscheme jellybeans 
-colorscheme ron
+colorscheme ron 
+set bg=light
 
 " change line number color
 " highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
