@@ -112,56 +112,38 @@ font:
 draw_bold_text_with_bright_colors: true 
 
 # Color scheme setting
-colors:  
+# Colors (Hyper)
+colors:
+  # Default colors
   primary:
-    foreground: '0xe3e3e3'
-    bright_foreground: '0xffffff'
-    dim_foreground:    '0xe3e3e3'
-    background: '0x1f1f1f'
-    bright_background: '0x686868' # not sure
-    dim_background:    '0x1f1f1f' # not sure
-
+    background: '0x1e1e1e'
+    foreground: '0xffffff'
   cursor:
-    text: '0x191622'
-    cursor: '0xf8f8f2'
+    text: '0xF81CE5'
+    cursor: '0xffffff'
 
-  search:
-    matches:
-      foreground: '0xb2b2b2'
-      background: '0xb26818'
-    focused_match:
-      foreground: CellBackground
-      background: CellForeground
-
+  # Normal colors
   normal:
     black:   '0x000000'
-    red:     '0xb21818'
-    green:   '0x18b218'
-    yellow:  '0xb26818'
-    blue:    '0x1818b2'
-    magenta: '0xb218b2'
-    cyan:    '0x18b2b2'
-    white:   '0xb2b2b2'
+    red:     '0xfe0100'
+    green:   '0x33ff00'
+    yellow:  '0xfeff00'
+    blue:    '0x0066ff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xd0d0d0'
 
+  # Bright colors
   bright:
-    black:   '0x686868'
-    red:     '0xff5454'
-    green:   '0x54ff54'
-    yellow:  '0xffff54'
-    blue:    '0x5454ff'
-    magenta: '0xff54ff'
-    cyan:    '0x54ffff'
-    white:   '0xffffff'
+    black:   '0x808080'
+    red:     '0xfe0100'
+    green:   '0x33ff00'
+    yellow:  '0xfeff00'
+    blue:    '0x0066ff'
+    magenta: '0xcc00ff'
+    cyan:    '0x00ffff'
+    white:   '0xFFFFFF'
 
-  dim:
-    black:   '0x000000'
-    red:     '0xb21818'
-    green:   '0x18b218'
-    yellow:  '0xb26818'
-    blue:    '0x1818b2'
-    magenta: '0xb218b2'
-    cyan:    '0x18b2b2'
-    white:   '0xb2b2b2'
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.

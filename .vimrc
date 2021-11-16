@@ -19,7 +19,7 @@ colorscheme ron
 highlight Comment ctermfg=Green
 
 " visual color
-highlight Visual cterm=bold ctermbg=236 ctermfg=NONE
+highlight Visual cterm=bold ctermbg=239 ctermfg=NONE
 
 " map Ctrl + h i j k to switch panel
 nnoremap <C-j> <C-w>j
