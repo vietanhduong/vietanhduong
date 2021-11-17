@@ -67,4 +67,5 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # enable font smoothing
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
+# make sure xcode already installed
 sudo xcodebuild -license accept
