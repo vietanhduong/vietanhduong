@@ -58,8 +58,7 @@ git config --global user.email "vietanhs0817@gmail.com"
 git config --global user.name "Viet Anh Duong"
 git config --global commit.gpgsign true
 git config --global gpg.program gpg
-
-# git config --global user.signingkey <place your key>
+git config --global user.signingkey 9700C966 # Replace with your key
 
 # disable press and hold on mac os
 defaults write -g ApplePressAndHoldEnabled -bool false
