@@ -34,6 +34,7 @@ alias tl="tmux ls"
 alias tk="tmux kill-session -t"
 alias tka="tmux kill-session -a"
 alias tkat="tmux kill-session -at"
+alias ts="tmux switch -t"
 
 ## =============================
 command_exists () {
