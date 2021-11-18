@@ -283,17 +283,18 @@ key_bindings:
   - { key: Down,      mods: Alt,                 chars: "\x1b[1;5B"                                                                }
   - { key: Left,      mods: Alt,                 chars: "\x1bb"                                                                    }
   - { key: Right,     mods: Alt,                 chars: "\x1bf"                                                                    }
+  - { key: T,         mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["new-window"]                  }}
   - { key: Tab,       mods: Control,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", ":+"]   }}
   - { key: Tab,       mods: Control|Shift,       command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", ":-"]   }}
-  - { key: Key1,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "0"]    }}
-  - { key: Key2,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "1"]    }}
-  - { key: Key3,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "2"]    }}
-  - { key: Key4,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "3"]    }}
-  - { key: Key5,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "4"]    }}
-  - { key: Key6,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "5"]    }}
-  - { key: Key7,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "6"]    }}
-  - { key: Key8,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "7"]    }}
-  - { key: Key9,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "8"]    }}
+  - { key: Key1,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "1"]    }}
+  - { key: Key2,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "2"]    }}
+  - { key: Key3,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "3"]    }}
+  - { key: Key4,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "4"]    }}
+  - { key: Key5,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "5"]    }}
+  - { key: Key6,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "6"]    }}
+  - { key: Key7,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "7"]    }}
+  - { key: Key8,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "8"]    }}
+  - { key: Key9,      mods: Command,             command: { program: "/usr/local/bin/tmux", args: ["select-window", "-t", "9"]    }}
 mouse:
   # Click settings
   #
