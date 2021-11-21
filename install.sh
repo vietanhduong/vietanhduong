@@ -27,25 +27,25 @@ cp -r ./fonts/$APPLY_FONT/* ~/Library/fonts
 curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
 
 # set default zsh
-sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)
+sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s "$(which zsh)"
 
 # save current dir
 _curdir="$PWD"
 
 # goto $HOME
-cd $HOME
+cd "$HOME"
 
 # link config
-ln -s $_curdir/.zshrc
-ln -s $_curdir/.vimrc
-ln -s $_curdir/.tmux.conf
-ln -s $_curdir/alacritty.yml .alacritty.yml
+ln -s "$_curdir"/.zshrc .
+ln -s "$_curdir"/.vimrc .
+ln -s "$_curdir"/.tmux.conf .
+ln -s "$_curdir"/alacritty.yml .alacritty.yml
 
-cd $_curdir
+cd "$_curdir"
 
 # update vim
-mkdir -p $HOME/.vim/colors
-cp -r colors $HOME/.vim/
+mkdir -p "$HOME"/vim/colors
+cp -r colors "$HOME"/.vim/
 
 # install plugins for zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
