@@ -64,17 +64,17 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: Input Mono 
-    style: Light
+    family: Menlo 
+    style: Regular 
 
   # The bold font face
   bold:
-    family: Input Mono 
-    style: Medium 
+    family: Menlo 
+    style: Bold 
 
   italic:
-    family: Input Mono 
-    style: Light Italic
+    family: Menlo 
+    style: Italic
 
   # Point size of the font
   size: 14.0 
@@ -82,8 +82,8 @@ font:
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
