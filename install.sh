@@ -20,7 +20,7 @@ xargs brew install <./brew/leaves
 xargs brew install --cask <./brew/casks
 
 # install font
-APPLY_FONT=input-mono
+APPLY_FONT=sf-mono
 cp -r ./fonts/$APPLY_FONT/* ~/Library/fonts
 
 # install oh-my-zsh

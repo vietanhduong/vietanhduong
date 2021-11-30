@@ -64,16 +64,16 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: Menlo 
-    style: Regular 
+    family: SF Mono 
+    style: Regular
 
   # The bold font face
   bold:
-    family: Menlo 
+    family: SF Mono 
     style: Bold 
 
   italic:
-    family: Menlo 
+    family: SF Mono 
     style: Italic
 
   # Point size of the font
