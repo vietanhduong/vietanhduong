@@ -65,19 +65,19 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: SF Mono 
-    style: Regular
+    style: Light 
 
   # The bold font face
   bold:
     family: SF Mono 
-    style: Bold 
+    style: Medium
 
   italic:
     family: SF Mono 
-    style: Italic
+    style: Light Italic
 
   # Point size of the font
-  size: 13.0 
+  size: 14.0 
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
