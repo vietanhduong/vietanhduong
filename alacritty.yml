@@ -70,7 +70,7 @@ font:
   # The bold font face
   bold:
     family: SF Mono 
-    style: Bold
+    style: Medium 
 
   italic:
     family: SF Mono 
