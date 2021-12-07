@@ -7,7 +7,7 @@ set number
 set hlsearch
 set ruler
 set backspace=indent,eol,start
-"set mouse=a
+set mouse=a
 set pastetoggle=<F3>
 
 colorscheme ron 
@@ -26,3 +26,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
+
+" use "*y or
+"     "+y for copy into clipboard
+
