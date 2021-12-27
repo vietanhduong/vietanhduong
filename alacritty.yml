@@ -65,7 +65,7 @@ font:
   # Style can be specified to pick a specific face.
   normal:
     family: Fira Code 
-    style: Regular 
+    style: Retina 
 
   # The bold font face
   bold:
