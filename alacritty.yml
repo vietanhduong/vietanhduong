@@ -111,43 +111,46 @@ font:
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true 
 
-# Color scheme setting
 colors:
   # Default colors
   primary:
-    background: '#000000'
-    foreground: '#dddddd'
+    background: '0x181818'
+    foreground: '0xd8d8d8'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x181818'
+    cursor: '0xd8d8d8'
 
   # Normal colors
   normal:
-    black:   '#000000'
-    red:     '#cc0403'
-    green:   '#19cb00'
-    yellow:  '#cecb00'
-    blue:    '#0d73cc'
-    magenta: '#cb1ed1'
-    cyan:    '#0dcdcd'
-    white:   '#dddddd'
+    black:   '0x181818'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xd8d8d8'
 
   # Bright colors
   bright:
-    black:   '#767676'
-    red:     '#f2201f'
-    green:   '#23fd00'
-    yellow:  '#fffd00'
-    blue:    '#1a8fff'
-    magenta: '#fd28ff'
-    cyan:    '#14ffff'
-    white:   '#ffffff'
+    black:   '0x585858'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xf8f8f8'
 
   indexed_colors:
-    - { index: 16, color: '0xde935f' }
-    - { index: 17, color: '0xa3685a' }
-    - { index: 18, color: '0x282a2e' }
-    - { index: 19, color: '0x373b41' }
-    - { index: 20, color: '0xb4b7b4' }
-    - { index: 21, color: '0xe0e0e0' }
-
+    - { index: 16, color: '0xdc9656' }
+    - { index: 17, color: '0xa16946' }
+    - { index: 18, color: '0x282828' }
+    - { index: 19, color: '0x383838' }
+    - { index: 20, color: '0xb8b8b8' }
+    - { index: 21, color: '0xe8e8e8' }
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
