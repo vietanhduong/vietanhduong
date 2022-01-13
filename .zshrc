@@ -46,11 +46,18 @@ command_exists () {
 # load bash autocomplete
 autoload -U +X bashcompinit && bashcompinit
 
-## TERAFORM
+## TERRAFORM
 if command_exists terraform; then
   alias tf="terraform"
   complete -o nospace -C /usr/local/bin/terraform terraform
 fi
+
+## TERRAGRUNT
+if command_exists terragrunt; then 
+  alias tg="terragrunt"
+  complete -C /usr/local/bin/terraform terragrunt
+fi
+
 
 ## AWS CLI
 if command_exists aws; then
