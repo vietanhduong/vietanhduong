@@ -23,6 +23,7 @@ alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tconfig="vim ~/.tmux.conf"
 alias resh="exec $SHELL"
+alias mp="mkdir -p"
 alias hs="history"
 alias vc="vault-converter"
 alias wk="watch kubectl"
@@ -74,6 +75,12 @@ if command_exists kubectl; then
   alias k="kubectl"
   alias kctx="kubectl config use-context"
   complete -F __start_kubectl k
+fi
+
+## KUBECTX
+if command_exists kubectx; then 
+  alias kctx="kubectx"
+  alias kns="kubens"
 fi
 
 ## GCLOUD
