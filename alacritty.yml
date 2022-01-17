@@ -64,20 +64,20 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: Fira Code 
-    style: Light 
+    family: Consolas
+    style: Regular 
 
   # The bold font face
   bold:
-    family: Fira Code 
-    style: Retina 
+    family: Consolas
+    style: Bold 
 
   italic:
-    family: Fira Code 
+    family: Consolas
     style: Italic
 
   # Point size of the font
-  size: 14.0 
+  size: 15.0 
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
