@@ -35,6 +35,4 @@ highlight Visual cterm=bold ctermbg=239 ctermfg=NONE
 nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
 
-" use "*y or
-"     "+y for copy into clipboard
-
+vnoremap <C-c> "+y<CR>
