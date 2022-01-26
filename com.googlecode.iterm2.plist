@@ -6,6 +6,8 @@
 	<false/>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>AllowTabbarInTitlebarAccessoryBigSur</key>
+	<false/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoHideTmuxClientSession</key>
@@ -5292,7 +5294,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>RobotoMono-Regular 14</string>
+			<string>Menlo-Regular 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -5689,9 +5691,9 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TerminalMargin</key>
-	<integer>5</integer>
+	<integer>2</integer>
 	<key>TerminalVMargin</key>
-	<integer>5</integer>
+	<integer>2</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>

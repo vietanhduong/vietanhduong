@@ -89,8 +89,8 @@ font:
   # the default being at the bottom. Increase the x offset to move the glyph to
   # the right, increase the y offset to move the glyph upward.
   glyph_offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -106,10 +106,10 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  # use_thin_strokes: true 
+  use_thin_strokes: false
 
 # When true, bold text is drawn using the bright variant of colors.
-draw_bold_text_with_bright_colors: true 
+draw_bold_text_with_bright_colors: true
 
 colors:
   # Default colors
