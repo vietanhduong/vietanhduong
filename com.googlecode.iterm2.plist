@@ -16,6 +16,8 @@
 	<integer>10</integer>
 	<key>BadgeTopMargin</key>
 	<integer>10</integer>
+	<key>CompactMinimalTabBarHeight</key>
+	<real>38</real>
 	<key>ConvertTabDragToWindowDragForSolitaryTabInCompactOrMinimalTheme</key>
 	<true/>
 	<key>CopyLastNewline</key>
@@ -4761,6 +4763,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>444325DC-851D-4841-B8C2-B78FDF12730E</string>
+	<key>DefaultTabBarHeight</key>
+	<real>24</real>
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
@@ -4774,6 +4778,8 @@
 	<key>DisableWindowSizeSnap</key>
 	<true/>
 	<key>DoubleClickPerformsSmartSelection</key>
+	<false/>
+	<key>DrawBottomLineForHorizontalTabBar</key>
 	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
@@ -4919,7 +4925,7 @@
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabNumber</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -5965,9 +5971,9 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TerminalMargin</key>
-	<integer>2</integer>
+	<integer>5</integer>
 	<key>TerminalVMargin</key>
-	<integer>2</integer>
+	<integer>5</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
