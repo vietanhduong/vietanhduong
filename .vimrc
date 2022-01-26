@@ -35,4 +35,5 @@ highlight Visual cterm=bold ctermbg=239 ctermfg=NONE
 nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
 
+" remap ctrl + c to copy select to clipboard
 vnoremap <C-c> "+y<CR>
