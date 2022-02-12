@@ -38,6 +38,8 @@ alias tka="tmux kill-session -a"
 alias tkat="tmux kill-session -at"
 alias ts="tmux switch -t"
 
+alias gr="cd $(git rev-parse --show-toplevel)"
+
 ## =============================
 command_exists () {
   type "$1" &> /dev/null ;
