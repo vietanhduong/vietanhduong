@@ -61,6 +61,8 @@ git config --global gpg.program gpg
 git config --global format.signoff true
 # git config --global user.signingkey <repleace with your key>
 
+git config --global alias.root 'rev-parse --show-toplevel'
+
 # disable press and hold on mac os
 defaults write -g ApplePressAndHoldEnabled -bool false
 
