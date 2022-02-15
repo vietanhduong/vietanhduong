@@ -9,6 +9,7 @@ set ruler
 set backspace=indent,eol,start
 set mouse=a
 set pastetoggle=<F3>
+set bg=dark
 
 " fold setting
 " z + o -> open a fold at the cursor
