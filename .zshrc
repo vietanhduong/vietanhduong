@@ -14,7 +14,7 @@ PROMPT='%(!.%{$fg[red]%}.%{$fg[cyan]%})%B[%*] %{$fg[green]%}%9c%{$fg[magenta]%}$
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 plugins=(git zsh-syntax-highlighting)
 
@@ -54,7 +54,7 @@ if command_exists terraform; then
 fi
 
 ## TERRAGRUNT
-if command_exists terragrunt; then 
+if command_exists terragrunt; then
   alias tg="terragrunt"
   complete -C /usr/local/bin/terraform terragrunt
 fi
@@ -70,7 +70,7 @@ fi
 if command_exists kubectl; then
   export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
   [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-  
+
   source <(kubectl completion zsh | sed '/_bash_comp/ s/^#*/#/')
   alias k="kubectl"
   alias kctx="kubectl config use-context"
@@ -78,7 +78,7 @@ if command_exists kubectl; then
 fi
 
 ## KUBECTX
-if command_exists kubectx; then 
+if command_exists kubectx; then
   alias kctx="kubectx"
   alias kns="kubens"
 fi
@@ -95,4 +95,3 @@ if command_exists vault; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
