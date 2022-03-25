@@ -38,3 +38,6 @@ nnoremap <C-k> <C-u>
 
 " remap ctrl + c to copy select to clipboard
 vnoremap <C-c> "+y<CR>
+
+" remap clear search hight light
+nnoremap <silent> <Esc><Esc> :let @/=""<CR>
