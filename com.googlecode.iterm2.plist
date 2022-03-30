@@ -6179,7 +6179,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Consolas 18</string>
+			<string>SFMono-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -6576,9 +6576,9 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TerminalMargin</key>
-	<integer>1</integer>
+	<integer>5</integer>
 	<key>TerminalVMargin</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
