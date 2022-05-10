@@ -31,7 +31,7 @@ colorscheme ron
 highlight Comment ctermfg=Green
 
 " visual color
-highlight Visual cterm=bold ctermbg=239 ctermfg=NONE
+highlight Visual cterm=none ctermbg=239 ctermfg=NONE
 
 nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
