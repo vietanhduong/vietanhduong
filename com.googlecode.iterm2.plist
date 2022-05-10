@@ -5757,7 +5757,7 @@
 			<key>Blend</key>
 			<real>0.81181746078411321</real>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
