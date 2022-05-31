@@ -44,3 +44,7 @@ nnoremap <silent> <Esc><Esc> :let @/=""<CR>
 
 " remap open explorer tab
 nnoremap <C-\> <Esc>:Le<CR>
+
+" remap switch tab
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
