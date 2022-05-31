@@ -95,3 +95,6 @@ if command_exists vault; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
