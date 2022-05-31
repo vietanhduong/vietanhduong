@@ -41,3 +41,6 @@ vnoremap <C-c> "+y<CR>
 
 " remap clear search hight light
 nnoremap <silent> <Esc><Esc> :let @/=""<CR>
+
+" remap open explorer tab
+nnoremap <C-\> <Esc>:Le<CR>
