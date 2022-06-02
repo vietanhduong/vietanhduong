@@ -8030,13 +8030,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.11764704436063766</real>
+				<real>0.11764705882352941</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.11764704436063766</real>
+				<real>0.11764705882352941</real>
 				<key>Red Component</key>
-				<real>0.11764704436063766</real>
+				<real>0.11764705882352941</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -9854,6 +9854,6 @@
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>kCPKUseSystemColorPicker</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
