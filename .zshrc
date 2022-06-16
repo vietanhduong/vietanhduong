@@ -37,6 +37,7 @@ alias tk="tmux kill-session -t"
 alias tka="tmux kill-session -a"
 alias tkat="tmux kill-session -at"
 alias ts="tmux switch -t"
+alias tiga="tig --all"
 
 ## =============================
 command_exists () {
