@@ -48,3 +48,7 @@ nnoremap <C-\> <Esc>:Le<CR>
 " remap switch tab
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
+
+" tab on select
+vmap <Tab> >gv
+vmap <S-Tab> <gv
