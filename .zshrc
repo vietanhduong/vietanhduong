@@ -19,6 +19,8 @@ export LANG=en_US.UTF-8
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+alias vim="nvim"
+alias vi="nvim"
 alias zconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias tconfig="vim ~/.tmux.conf"
