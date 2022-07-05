@@ -29,19 +29,14 @@ curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools
 # set default zsh
 sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s "$(which zsh)"
 
-# save current dir
-_curdir="$PWD"
-
-# goto $HOME
-cd "$HOME"
+# make neovim config dir
+mkdir -p $HOME/.config/nvim
 
 # link config
-ln -s "$_curdir"/.zshrc .
-ln -s "$_curdir"/.vimrc .
-ln -s "$_curdir"/.tmux.conf .
-ln -s "$_curdir"/alacritty.yml .alacritty.yml
-
-cd "$_curdir"
+ln -s $PWD/.zshrc $HOME/.zshrc
+ln -s $PWD/.vimrc $HOME/.config/nvim/init.vim
+ln -s $PWD/.tmux.conf $HOME/.tmux.conf
+ln -s $PWD/alacritty.yml $HOME/.alacritty.yml
 
 # update vim
 mkdir -p "$HOME"/vim/colors

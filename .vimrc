@@ -10,19 +10,21 @@ set backspace=indent,eol,start
 set mouse=a
 set pastetoggle=<F3>
 set bg=dark
+set t_Co=256
+set laststatus=2
 
 " fold setting
 " z + o -> open a fold at the cursor
 " z shift + o -> open all folds at the cursor
 " z + c -> closes a fold at the cursor
 " z shift + m -> closes all open folds
-set foldmethod=indent   
+set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
 " color scheme setting
-colorscheme ron 
+colorscheme ron
 
 " change line number color
 " highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -52,3 +54,7 @@ nnoremap <C-l> :tabnext<CR>
 " tab on select
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" highlight trailing spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
