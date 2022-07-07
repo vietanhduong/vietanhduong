@@ -19,6 +19,9 @@ fi
 xargs brew install <./brew/leaves
 xargs brew install --cask <./brew/casks
 
+brew tap homebrew/cask-fonts
+brew install --cask font-iosevka
+
 # install font
 APPLY_FONT=source-code-pro
 cp -r ./fonts/$APPLY_FONT/* ~/Library/fonts
