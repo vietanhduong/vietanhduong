@@ -9929,7 +9929,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TabsHaveCloseButton</key>
