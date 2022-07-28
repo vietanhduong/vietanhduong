@@ -9,7 +9,7 @@ git_branch() {
   fi
 }
 
-PROMPT='%F{9}[%f%F{15}%n@%f%F{10}%m%f %F{11}%~%f%F{13}$(git_branch)%f%F{9}]%f %F{15}$%f '
+PROMPT='%F{9}[%f%F{15}%n@%f%F{10}%m%f %F{11}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f%F{9}]%f %F{15}$%f '
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
