@@ -9,8 +9,7 @@ git_branch() {
   fi
 }
 
-PROMPT='%(!.%{$fg[red]%}.%{$fg[cyan]%})%B[%*] %{$fg[green]%}%9c%{$fg[magenta]%}$(git_branch)%F{none} %{$fg[gray]%}$%b %{$reset_color%}% '
-
+PROMPT='%F{9}[%f%F{15}%n@%f%F{10}%m%f %F{11}%~%f%F{13}$(git_branch)%f%F{9}]%f %F{15}$%f '
 export GPG_TTY=$(tty)
 export EDITOR='vim'
 export PATH=/usr/local/sbin:$PATH
