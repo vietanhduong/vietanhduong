@@ -40,6 +40,10 @@ alias tka="tmux kill-session -a"
 alias tkat="tmux kill-session -at"
 alias ts="tmux switch -t"
 alias tiga="tig --all"
+alias dc="docker-compose"
+alias dcu="dc up"
+alias dcd="dc down"
+alias dcs="dc stop"
 
 ## =============================
 command_exists () {
