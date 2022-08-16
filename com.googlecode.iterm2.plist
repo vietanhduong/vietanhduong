@@ -8684,7 +8684,7 @@
 	<key>DrawOutlineAroundCursor</key>
 	<false/>
 	<key>EnableDivisionView</key>
-	<false/>
+	<true/>
 	<key>EnableProxyIcon</key>
 	<true/>
 	<key>GlobalKeyMap</key>
@@ -9937,7 +9937,7 @@
 	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TerminalVMargin</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
