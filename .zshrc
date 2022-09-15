@@ -11,7 +11,7 @@ git_branch() {
 
 PROMPT='%n@%m:%F{10}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f $ '
 export GPG_TTY=$(tty)
-export EDITOR='vim'
+export EDITOR='nvim'
 export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
