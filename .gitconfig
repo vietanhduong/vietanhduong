@@ -1,0 +1,20 @@
+[user]
+	email = vietanhs0817@gmail.com
+	name = Viet-Anh Duong
+	signingkey = 9700C96680D74DF23F6767E6EBBBD54FAF5AA4D1
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[pull]
+	rebase = true
+[format]
+	signoff = true
+[alias]
+	root = rev-parse --show-toplevel
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

@@ -40,6 +40,7 @@ ln -s $PWD/.zshrc $HOME/.zshrc
 ln -s $PWD/.vimrc $HOME/.config/nvim/init.vim
 ln -s $PWD/.tmux.conf $HOME/.tmux.conf
 ln -s $PWD/alacritty.yml $HOME/.alacritty.yml
+ln -s $PWD/.gitconfig $HOME/.gitconfig
 
 # update vim
 mkdir -p "$HOME"/vim/colors
