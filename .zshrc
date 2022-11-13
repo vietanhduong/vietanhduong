@@ -9,7 +9,7 @@ git_branch() {
   fi
 }
 
-PROMPT='%n:%F{10}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f$ '
+PROMPT='%B%n%b:%F{10}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f$ '
 export GPG_TTY=$(tty)
 export EDITOR='nvim'
 export PATH=/usr/local/sbin:$PATH
