@@ -15,6 +15,7 @@ export EDITOR='nvim'
 export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
