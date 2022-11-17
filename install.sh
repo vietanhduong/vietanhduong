@@ -70,3 +70,6 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 
 # make sure xcode already installed
 sudo xcodebuild -license accept
+
+# allow everywhere
+sudo spctl --master-disable
