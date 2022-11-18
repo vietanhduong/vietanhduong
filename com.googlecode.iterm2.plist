@@ -10311,6 +10311,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>MinimumWeightDifferenceForBoldFont</key>
+	<integer>2</integer>
 	<key>NeverWarnAboutShortLivedSessions_444325DC-851D-4841-B8C2-B78FDF12730E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_444325DC-851D-4841-B8C2-B78FDF12730E_selection</key>
@@ -10993,7 +10995,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCode-Retina 15</string>
+			<string>FiraCode-Regular 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
