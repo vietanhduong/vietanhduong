@@ -11402,7 +11402,7 @@
 	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TerminalVMargin</key>
-	<integer>5</integer>
+	<integer>0</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
