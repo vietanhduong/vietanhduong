@@ -10312,7 +10312,7 @@
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>MinimumWeightDifferenceForBoldFont</key>
-	<integer>2</integer>
+	<integer>1</integer>
 	<key>NeverWarnAboutShortLivedSessions_444325DC-851D-4841-B8C2-B78FDF12730E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_444325DC-851D-4841-B8C2-B78FDF12730E_selection</key>
@@ -11402,7 +11402,7 @@
 	<key>TerminalMargin</key>
 	<integer>5</integer>
 	<key>TerminalVMargin</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>UseBorder</key>
