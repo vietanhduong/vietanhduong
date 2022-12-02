@@ -26,7 +26,6 @@ set nofoldenable
 set foldlevel=2
 
 " color scheme setting
-colorscheme desert
 
 " change line number color
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
