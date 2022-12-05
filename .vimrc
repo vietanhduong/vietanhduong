@@ -1,3 +1,7 @@
+call plug#begin()
+Plug 'chaoren/vim-wordmotion'
+call plug#end()
+
 syntax on
 set tabstop=2
 set shiftwidth=2
@@ -67,4 +71,3 @@ vmap <S-Tab> <gv
 " highlight trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-
