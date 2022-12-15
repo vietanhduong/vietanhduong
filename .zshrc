@@ -11,7 +11,7 @@ git_branch() {
 
 PROMPT="%F{white}%n%f"
 PROMPT+="@"
-PROMPT+='%F{green}${${(%):-%m}}%f %F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
+PROMPT+='%F{green}${${(%):-%m}#anhdv-}%f %F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
 PROMPT+=' %# '
 
 export GPG_TTY=$(tty)
