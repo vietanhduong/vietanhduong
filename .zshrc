@@ -121,3 +121,4 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+
