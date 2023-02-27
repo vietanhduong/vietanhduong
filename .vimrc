@@ -26,8 +26,8 @@ set cursorlineopt=number
 " z shift + m -> closes all open folds
 set foldmethod=indent
 set foldnestmax=10
-set nofoldenable
 set foldlevel=2
+set nofoldenable
 
 " color scheme setting
 
@@ -71,3 +71,11 @@ vmap <S-Tab> <gv
 " highlight trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+" move lines
+nnoremap <A-j> :m+<CR>==
+nnoremap <A-k> :m-2<CR>==
+inoremap <A-j> <Esc>:m+<CR>==gi
+inoremap <A-k> <Esc>:m-2<CR>==gi
+vnoremap <A-j> :m'>+<CR>gv=gv
+vnoremap <A-k> :m-2<CR>gv=gv
