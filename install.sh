@@ -73,3 +73,7 @@ sudo xcodebuild -license accept
 
 # allow everywhere
 sudo spctl --master-disable
+
+# hook ttl 65 at startup
+sudo cp com.anhdv.ttl65.plist /Library/LaunchDaemons
+sudo launchctl -w /Library/LaunchDaemons/com.anhdv.ttl65.plist
