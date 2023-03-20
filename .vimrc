@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'hashivim/vim-terraform'
 Plug 'chaoren/vim-wordmotion'
 call plug#end()
 
