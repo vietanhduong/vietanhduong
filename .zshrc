@@ -52,6 +52,7 @@ alias dcd="dc down"
 alias dcs="dc stop"
 alias tp="telepresence"
 alias ktun="k tunnel"
+alias cdgr='cd $(git root)'
 
 ## =============================
 command_exists () {
