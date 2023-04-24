@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.anhdv.ttl65</string>
+    <string>com.anhdv.ttl</string>
     <key>MachServices</key>
     <dict>
-        <key>com.anhdv.ttl65</key>
+        <key>com.anhdv.ttl</key>
         <true/>
     </dict>
     <key>Program</key>
@@ -14,7 +14,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/sbin/sysctl</string>
-        <string>net.inet.ip.ttl=65</string>
+        <string>net.inet.ip.ttl=128</string>
     </array>
     <key>UserName</key>
     <string>root</string>
