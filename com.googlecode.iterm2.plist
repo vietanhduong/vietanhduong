@@ -10368,7 +10368,7 @@
 	<key>DimInactiveSplitPanes</key>
 	<true/>
 	<key>DimOnlyText</key>
-	<true/>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>DisableTmuxWindowResizing</key>
@@ -11516,7 +11516,7 @@
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.50089280850142737</real>
+	<real>0.59999999999999998</real>
 	<key>StatusBarHeight</key>
 	<real>20</real>
 	<key>StatusBarPosition</key>
