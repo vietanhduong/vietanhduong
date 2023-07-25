@@ -87,10 +87,18 @@ bind C-j select-pane -D
 bind C-k select-pane -U
 bind C-l select-pane -R
 
+
+# Remove SSH_AUTH_SOCK to disable tmux automatically resetting the variable
+set -g update-environment "DISPLAY SSH_ASKPASS SSH_AGENT_PID \
+                             SSH_CONNECTION WINDOWID XAUTHORITY"
+
+# Use a symlink to look up SSH authentication
+setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+
 #set inactive/active window styles
 set -g window-style 'fg=colour247,bg=colour236'
 set -g window-active-style 'fg=colour250,bg=black'
 
-# set the pane border colors 
-set -g pane-border-style 'fg=colour235,bg=colour238' 
+# set the pane border colors
+set -g pane-border-style 'fg=colour235,bg=colour238'
 set -g pane-active-border-style 'fg=colour51,bg=colour236'
