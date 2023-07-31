@@ -17,8 +17,6 @@ set pastetoggle=<F3>
 set bg=dark
 set t_Co=256
 set laststatus=2
-set cursorline
-set cursorlineopt=number
 
 " fold setting
 " z + o -> open a fold at the cursor
