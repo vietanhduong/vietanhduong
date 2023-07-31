@@ -9,10 +9,10 @@ git_branch() {
   fi
 }
 
-PROMPT="%F{white}%n%f"
+PROMPT="[%F{white}%n%f"
 PROMPT+="@"
-PROMPT+='%F{green}${${(%):-%m}#anhdv-}%f %F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
-PROMPT+=' %# '
+PROMPT+='%F{green}${${(%):-%m}#anhdv-}%f:%F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f]'
+PROMPT+='$ '
 
 export GPG_TTY=$(tty)
 export EDITOR='nvim'
