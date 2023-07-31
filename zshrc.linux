@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
+export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
 
 git_branch() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
@@ -55,6 +57,7 @@ alias dcu="dc up"
 alias dcd="dc down"
 alias dcs="dc stop"
 alias tp="telepresence"
+alias k="kubectl"
 alias ktun="k tunnel"
 alias ktop="k ktop"
 alias cdgr='cd $(git root)'
@@ -84,30 +87,6 @@ fi
 if command_exists terragrunt; then
   alias tg="terragrunt"
   complete -C /usr/local/bin/terraform terragrunt
-fi
-
-
-## AWS CLI
-if command_exists aws; then
-  complete -C '/usr/local/bin/aws_completer' aws
-  export PATH=/usr/local/aws/bin:$PATH
-fi
-
-## KUBECTL
-if command_exists kubectl; then
-  export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-  [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
-  source <(kubectl completion zsh | sed '/_bash_comp/ s/^#*/#/')
-  alias k="kubectl"
-  complete -F __start_kubectl k
-fi
-
-
-## GCLOUD
-if [ -d "/usr/local/Caskroom/google-cloud-sdk" ]; then
-  source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-  source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 fi
 
 ## VAULT
@@ -143,3 +122,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
