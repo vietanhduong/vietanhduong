@@ -132,8 +132,8 @@ export GPG_TTY=$(tty)
 
 [[ -f ~/.iterm2_shell_integration.zsh ]] && source ~/.iterm2_shell_integration.zsh
 
-source /usr/share/google-cloud-sdk/completion.zsh.inc
-source ~/.zprofile
+[ -f /usr/share/google-cloud-sdk/completion.zsh.inc ] && source /usr/share/google-cloud-sdk/completion.zsh.inc
+[ -f "$HOME/.zprofile" ] && source ~/.zprofile
 
 export GO_PATH=~/go
 export PATH=$PATH:/$GO_PATH/bin
