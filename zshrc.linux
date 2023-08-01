@@ -1,10 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# To install gcloud sdk:
+#   curl https://sdk.cloud.google.com | bash
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
-export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
 
 git_branch() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
@@ -13,6 +13,13 @@ git_branch() {
   else
     echo ""
   fi
+}
+
+kubectl() {
+  if ! type __start_kubectl >/dev/null 2>&1; then
+      source <(command kubectl completion zsh)
+  fi
+  command kubectl "$@"
 }
 
 PROMPT="[%F{white}%n%f"
@@ -65,7 +72,11 @@ alias kctx="kubectl ctx"
 alias kns="kubectl ns"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias vg="vagrant"
 
+export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
+export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
+# source <(/home/ubuntu/google-cloud-sdk/bin/kubectl completion zsh)
 
 
 ## =============================
