@@ -54,6 +54,7 @@ alias tp="telepresence"
 alias ktun="k tunnel"
 alias ktop="k ktop"
 alias cdgr='cd $(git root)'
+alias todev='ssh dev'
 
 ## =============================
 command_exists () {
