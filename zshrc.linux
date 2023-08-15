@@ -22,6 +22,13 @@ kubectl() {
   command kubectl "$@"
 }
 
+helm() {
+  if ! type __start_helm >/dev/null 2>&1; then
+      source <(command helm completion zsh)
+  fi
+  command helm "$@"
+}
+
 PROMPT="[%F{white}%n%f"
 PROMPT+="@"
 PROMPT+='%F{green}${${(%):-%m}#anhdv-}%f:%F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f]'
@@ -73,6 +80,7 @@ alias kns="kubectl ns"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
+alias reset-gpg="gpgconf --kill gpg-agent"
 
 export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
 export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
