@@ -4,6 +4,7 @@ commit=$1
 
 if [[ -z "$commit" ]]; then
   echo "script require 1 args" >&2
+  exit 1
 fi
 
 recent_tag="$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "v0.0.0")"
