@@ -1,0 +1,13 @@
+#!/bin/bash
+
+commit=$1
+
+if [[ -z "$commit" ]]; then
+  echo "script require 1 args" >&2
+fi
+
+recent_tag="$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "v0.0.0")"
+
+commit_date="$(git show -s --format=%cd --date=format:%Y%m%d%H%M%S $commit)"
+
+echo "${recent_tag}-${commit_date}-${commit:0:12}"

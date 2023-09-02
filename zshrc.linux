@@ -147,3 +147,7 @@ if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
+
+export VCPKG_ROOT="$HOME/vcpkg"
+export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
+# export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
