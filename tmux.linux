@@ -96,8 +96,8 @@ set -g update-environment "DISPLAY SSH_ASKPASS SSH_AGENT_PID \
 setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 
 #set inactive/active window styles
-set -g window-style 'fg=colour247,bg=colour236'
-set -g window-active-style 'fg=colour250,bg=black'
+#set -g window-style 'fg=colour247,bg=colour236'
+#set -g window-active-style 'fg=colour250,bg=black'
 
 # status panel
 set -g status-position bottom
