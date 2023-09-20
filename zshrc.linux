@@ -15,6 +15,26 @@ git_branch() {
   fi
 }
 
+cdgr() {
+  REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+  if [[ -z $REPO_ROOT ]]; then
+    echo "Error: Not a git repository (or any of the parent directories): .git" >&2
+    return 1
+  fi
+  # If no input we can go to the root of this repo
+  [[ $# -eq 0 ]] && cd $REPO_ROOT && return 0
+
+  DST=$REPO_ROOT/$1
+  # First we will test the input, if it's a directory
+  # we can go to directly
+  [[ -d $DST ]] && cd $DST && return 0
+  # Otherwise, if the destination is a file, we can strip
+  # the filename and change the directory to the output
+  [[ -f $DST ]] && cd $(dirname $DST) && return 0
+  # return error if no match
+  echo "$DST: No such file or directory" >&2 && return 1
+}
+
 kubectl() {
   if ! type __start_kubectl >/dev/null 2>&1; then
       source <(command kubectl completion zsh)
@@ -74,7 +94,6 @@ alias tp="telepresence"
 alias k="kubectl"
 alias ktun="k tunnel"
 alias ktop="k ktop"
-alias cdgr='cd $(git root)'
 alias kctx="kubectl ctx"
 alias kns="kubectl ns"
 alias pbcopy='xsel --clipboard --input'
