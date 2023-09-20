@@ -9,6 +9,27 @@ git_branch() {
   fi
 }
 
+cdgr() {
+  REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
+  if [[ -z $REPO_ROOT ]]; then
+    echo "Error: Not a git repository (or any of the parent directories): .git" >&2
+    return 1
+  fi
+  # If no input we can go to the root of this repo
+  [[ $# -eq 0 ]] && cd $REPO_ROOT && return 0
+
+  DST=$REPO_ROOT/$1
+  # First we will test the input, if it's a directory
+  # we can go to directly
+  [[ -d $DST ]] && cd $DST && return 0
+  # Otherwise, if the destination is a file, we can strip
+  # the filename and change the directory to the output
+  [[ -f $DST ]] && cd $(dirname $DST) && return 0
+  # return error if no match
+  echo "$DST: No such file or directory" >&2 && return 1
+}
+
+
 PROMPT="[%F{white}%n%f"
 PROMPT+="@"
 PROMPT+='%F{green}${${(%):-%m}#anhdv-}%f:%F{yellow}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f]'
