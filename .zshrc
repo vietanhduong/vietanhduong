@@ -86,63 +86,8 @@ command_exists () {
 # load bash autocomplete
 autoload -U +X bashcompinit && bashcompinit
 
-## TERRAFORM
-if command_exists terraform; then
-  alias tf="terraform"
-  complete -o nospace -C /usr/local/bin/terraform terraform
-fi
-
-## TERRAGRUNT
-if command_exists terragrunt; then
-  alias tg="terragrunt"
-  complete -C /usr/local/bin/terraform terragrunt
-fi
-
-
-## AWS CLI
-if command_exists aws; then
-  complete -C '/usr/local/bin/aws_completer' aws
-  export PATH=/usr/local/aws/bin:$PATH
-fi
-
-## KUBECTL
-if command_exists kubectl; then
-  export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-  [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
-  source <(kubectl completion zsh | sed '/_bash_comp/ s/^#*/#/')
-  alias k="kubectl"
-  alias kctx="kubectl config use-context"
-  complete -F __start_kubectl k
-fi
-
-## KUBECTX
-if command_exists kubectx; then
-  alias kctx="kubectx"
-  alias kns="kubens"
-fi
-
-## GCLOUD
-if [ -d "/usr/local/Caskroom/google-cloud-sdk" ]; then
-  source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-  source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-fi
-
-## VAULT
-if command_exists vault; then
-  complete -o nospace -C /usr/local/bin/vault vault
-fi
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-
-export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
+[[ -f "${HOME}/.zsh_profile" ]] && source $HOME/.zsh_profile
