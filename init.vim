@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'hashivim/vim-terraform'
 Plug 'wellle/context.vim'
 Plug 'chaoren/vim-wordmotion'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 syntax on
