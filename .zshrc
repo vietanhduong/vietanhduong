@@ -91,3 +91,4 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
 [[ -f "${HOME}/.zsh_profile" ]] && source $HOME/.zsh_profile
+
