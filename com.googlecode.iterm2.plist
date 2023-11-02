@@ -11393,7 +11393,7 @@
 			<key>Initial Text</key>
 			<string></string>
 			<key>Initial Use Transparency</key>
-			<false/>
+			<true/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -11992,7 +11992,7 @@
 			<key>Title Components</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.14999999999999999</real>
 			<key>Unicode Normalization</key>
 			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
