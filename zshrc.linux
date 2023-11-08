@@ -24,6 +24,10 @@ cdgr() {
   # If no input we can go to the root of this repo
   [[ $# -eq 0 ]] && cd $REPO_ROOT && return 0
 
+  if [[ $1 == ${REPO_ROOT}* ]]; then
+    cd $(dirname $1) && return 0
+  fi
+
   DST=$REPO_ROOT/$1
   # First we will test the input, if it's a directory
   # we can go to directly
