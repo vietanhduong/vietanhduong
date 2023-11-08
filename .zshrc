@@ -30,9 +30,9 @@ cdgr() {
 }
 
 
-PROMPT="%F{82}%n"
+PROMPT="%F{10}%n"
 PROMPT+="@"
-PROMPT+='${${(%):-%m}#anhdv-}%f:%F{111}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
+PROMPT+='${${(%):-%m}#anhdv-}%f:%F{12}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
 PROMPT+='$ '
 
 export GPG_TTY=$(tty)
