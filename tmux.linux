@@ -23,6 +23,7 @@ setw -g monitor-activity on
 
 # copy mode
 bind-key -T copy-mode-vi y send-keys -X copy-selection
+unbind -T copy-mode-vi MouseDragEnd1Pane
 
 
 # Show times longer than supposed
