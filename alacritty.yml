@@ -21,7 +21,7 @@ env:
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacrity
+  TERM: alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -62,7 +62,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  #decorations: full
 
   # Background opacity
   #
@@ -85,7 +85,7 @@ window:
   #title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
+  # dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -111,7 +111,7 @@ window:
   #   - OnlyRight
   #   - Both
   #   - None (default)
-  option_as_alt: Both
+  option_as_alt: None
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -124,11 +124,14 @@ window:
 # Font configuration
 font:
   # Normal (roman) font face
-  normal: &font
+  normal:
     family: Jetbrains Mono NL
-  bold: *font
-  italic: *font
-  bold_italic: *font
+  bold:
+    family: Jetbrains Mono NL
+  italic:
+    family: Jetbrains Mono NL
+  bold_italic:
+    family: Jetbrains Mono NL
 
   # Point size
   size: 15.0
@@ -158,7 +161,7 @@ font:
 draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-colors: {}
+#colors:
   # Default colors
   #primary:
   #  background: '#1d1f21'
