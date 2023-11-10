@@ -76,6 +76,8 @@ alias ktun="k tunnel"
 alias ktop="k ktop"
 alias cdgr='cd $(git root)'
 alias todev='ssh dev'
+alias sp='socketproxy'
+alias spd='socketproxy disable'
 
 ## =============================
 command_exists () {
