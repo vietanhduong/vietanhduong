@@ -1,5 +1,4 @@
 export ZSH="/Users/${USER}/.oh-my-zsh"
-
 git_branch() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
   if [ -n "${ref}" ]; then
@@ -76,8 +75,8 @@ alias ktun="k tunnel"
 alias ktop="k ktop"
 alias cdgr='cd $(git root)'
 alias todev='ssh dev'
-alias sp='socketproxy'
-alias spd='socketproxy disable'
+alias sp='socksproxy'
+alias spd='socksproxy disable'
 
 ## =============================
 command_exists () {
