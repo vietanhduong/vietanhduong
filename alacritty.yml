@@ -5,7 +5,6 @@
 # Imports are loaded in order, skipping all missing files, with the importing
 # file being loaded last. If a field is already present in a previous import, it
 # will be replaced.
-#
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 #import:
@@ -111,7 +110,7 @@ window:
   #   - OnlyRight
   #   - Both
   #   - None (default)
-  option_as_alt: None
+  option_as_alt: Both
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -161,7 +160,7 @@ font:
 draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
   #primary:
   #  background: '#1d1f21'
@@ -199,15 +198,15 @@ draw_bold_text_with_bright_colors: false
   # Search colors
   #
   # Colors used for the search bar and match highlighting.
-  #search:
+  search:
     # Allowed values are CellForeground/CellBackground, which reference the
     # affected cell, or hexadecimal colors like #ff00ff.
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: '#ffffff'
-    #  background: '#000000'
+    matches:
+      foreground: '#003edb'
+      background: '#fcba03'
+    focused_match:
+      foreground: '#fcba03'
+      background: '#003edb'
 
   # Keyboard hints
   # hints:
