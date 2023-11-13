@@ -55,7 +55,7 @@ fi
 
 set -e
 
-tmpdir=$(mktemp -d "/tmp/$(dirname "${URL#"gs://"}").XXXXXX")
+tmpdir=$(mktemp -d "/tmp/gsedit.XXXXXX")
 tmpfile="$tmpdir/$(basename $URL)"
 trap 'rm -rf $tmpdir' ERR EXIT
 
