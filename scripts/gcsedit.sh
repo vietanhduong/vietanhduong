@@ -3,7 +3,7 @@
 set -e
 
 function usage() {
-  echo -e "\nUsage: $(basename $0) [-h] URL"
+  echo -e "Usage: $(basename $0) [-h] URL"
   echo -e "Edit (or create) a GCS file. This program require \`gsutil\` CLI."
   echo -e "The URL is required parameter and must have the format gs://<bucket>/path/to/file"
   echo -e "Flags:"
@@ -11,7 +11,7 @@ function usage() {
 }
 
 function printerr() {
-  echo -e "${@}" >&2
+  echo -e "${@}\n" >&2
   usage
   exit 1
 }
