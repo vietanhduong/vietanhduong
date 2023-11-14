@@ -124,17 +124,13 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: SF Mono
-    style: Light
+    family: Menlo
   bold:
-    family: SF Mono
-    style: Semibold
+    family: Menlo
   italic:
-    family: SF Mono
-    style: Light Italic
+    family: Menlo
   bold_italic:
-    family: SF Mono
-    style: Semibold Italic
+    family: Menlo
 
   # Point size
   size: 15.0
