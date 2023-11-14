@@ -124,13 +124,17 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Menlo
+    family: Iosevka
+    style: Extended
   bold:
-    family: Menlo
+    family: Iosevka
+    style: Semibold Extended
   italic:
-    family: Menlo
+    family: Iosevka
+    style: Italic Extended
   bold_italic:
-    family: Menlo
+    family: Iosevka
+    style: Semibol Italic Extended
 
   # Point size
   size: 15.0
