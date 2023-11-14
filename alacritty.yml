@@ -124,16 +124,16 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Iosevka
+    family: Iosevka Term
     style: Extended
   bold:
-    family: Iosevka
+    family: Iosevka Term
     style: Semibold Extended
   italic:
-    family: Iosevka
+    family: Iosevka Term
     style: Italic Extended
   bold_italic:
-    family: Iosevka
+    family: Iosevka Term
     style: Semibol Italic Extended
 
   # Point size
