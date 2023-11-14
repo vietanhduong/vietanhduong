@@ -124,13 +124,17 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Jetbrains Mono NL
+    family: SF Mono
+    style: Light
   bold:
-    family: Jetbrains Mono NL
+    family: SF Mono
+    style: Semibold
   italic:
-    family: Jetbrains Mono NL
+    family: SF Mono
+    style: Light Italic
   bold_italic:
-    family: Jetbrains Mono NL
+    family: SF Mono
+    style: Semibold Italic
 
   # Point size
   size: 15.0
