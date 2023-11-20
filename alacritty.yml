@@ -255,9 +255,9 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
+  selection:
+    text: '#fcfcfc'
+    background: '#3277a8'
 
   # Normal colors
   #normal:
