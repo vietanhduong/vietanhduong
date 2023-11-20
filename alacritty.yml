@@ -124,16 +124,16 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Iosevka Term
+    family: Iosevka ss12
     style: Extended
   bold:
-    family: Iosevka Term
+    family: Iosevka ss12
     style: Semibold Extended
   italic:
-    family: Iosevka Term
+    family: Iosevka ss12
     style: Italic Extended
   bold_italic:
-    family: Iosevka Term
+    family: Iosevka ss12
     style: Semibol Italic Extended
 
   # Point size
@@ -158,10 +158,10 @@ font:
   # If `true`, Alacritty will use a custom built-in font for box drawing
   # characters (Unicode points 2500 - 259f).
   #
-  #builtin_box_drawing: true
+  # builtin_box_drawing: false
 
 # If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 # Colors (Tomorrow Night)
 colors:
