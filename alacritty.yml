@@ -122,19 +122,10 @@ window:
 
 # Font configuration
 font:
-  # Normal (roman) font face
   normal:
-    family: Iosevka ss12
-    style: Extended
+    family: Fira Mono
   bold:
-    family: Iosevka ss12
-    style: Semibold Extended
-  italic:
-    family: Iosevka ss12
-    style: Italic Extended
-  bold_italic:
-    family: Iosevka ss12
-    style: Semibol Italic Extended
+    family: Fira Mono
 
   # Point size
   size: 16.0
@@ -152,7 +143,6 @@ font:
   #glyph_offset:
   #  x: 0
   #  y: 0
-
   # Use built-in font for box drawing characters.
   #
   # If `true`, Alacritty will use a custom built-in font for box drawing
