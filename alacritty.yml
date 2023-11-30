@@ -123,17 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Noto Mono for Powerline
+    family: Fira Code
     style: Regular
   italic:
-    family: Noto Mono for Powerline
+    family: Fira Code
     style: Regular Italic
   bold:
-    family: Noto Mono for Powerline
-    style: Semibold
+    family: Fira Code
   bold_italic:
-    family: Noto Mono for Powerline
-    style: Semibold Italic
+    family: Fira Code
 
   # Point size
   size: 16.0
