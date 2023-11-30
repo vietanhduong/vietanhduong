@@ -123,16 +123,16 @@ window:
 # Font configuration
 font:
   normal:
-    family: Jetbrains Mono NL
+    family: Noto Mono for Powerline
     style: Regular
   italic:
-    family: Jetbrains Mono NL
+    family: Noto Mono for Powerline
     style: Regular Italic
   bold:
-    family: Jetbrains Mono NL
+    family: Noto Mono for Powerline
     style: Semibold
   bold_italic:
-    family: Jetbrains Mono NL
+    family: Noto Mono for Powerline
     style: Semibold Italic
 
   # Point size
