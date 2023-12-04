@@ -159,47 +159,39 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night)
+# Colors (Base 16 Default dark)
 colors:
-  search:
-    matches:
-      foreground: '#003edb'
-      background: '#fcba03'
-    focused_match:
-      foreground: '#fcba03'
-      background: '#003edb'
-
-  selection:
-    text: '#fcfcfc'
-    background: '#3277a8'
-
   # Default colors
   primary:
-    background: '#282828'
-    foreground: '#ebdbb2'
+    background: '0x181818'
+    foreground: '0xd8d8d8'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x181818'
+    cursor: '0xd8d8d8'
 
   # Normal colors
   normal:
-    black:   '#3c3836'
-    red:     '#ea6962'
-    green:   '#a9b665'
-    yellow:  '#d8a657'
-    blue:    '#7daea3'
-    magenta: '#d3869b'
-    cyan:    '#89b482'
-    white:   '#d4be98'
+    black:   '0x181818'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xd8d8d8'
 
-  # Bright colors (same as normal colors)
+  # Bright colors
   bright:
-    black:   '#3c3836'
-    red:     '#ea6962'
-    green:   '#a9b665'
-    yellow:  '#d8a657'
-    blue:    '#7daea3'
-    magenta: '#d3869b'
-    cyan:    '#89b482'
-    white:   '#d4be98'
-
+    black:   '0x585858'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xf8f8f8'
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
