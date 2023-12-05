@@ -123,15 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Fira Code
+    family: Menlo
     style: Regular
   italic:
-    family: Fira Code
+    family: Menlo
     style: Regular Italic
   bold:
-    family: Fira Code
+    family: Menlo
   bold_italic:
-    family: Fira Code
+    family: Menlo
 
   # Point size
   size: 16.0
