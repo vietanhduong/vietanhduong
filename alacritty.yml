@@ -123,15 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Monaco
+    family: Menlo
     style: Regular
   italic:
-    family: Monaco
+    family: Menlo
     style: Regular Italic
   bold:
-    family: Monaco
+    family: Menlo
   bold_italic:
-    family: Monaco
+    family: Menlo
 
   # Point size
   size: 16.0
