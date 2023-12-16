@@ -123,15 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Menlo
+    family: Hack
     style: Regular
   italic:
-    family: Menlo
+    family: Hack
     style: Regular Italic
   bold:
-    family: Menlo
+    family: Hack
   bold_italic:
-    family: Menlo
+    family: Hack
 
   # Point size
   size: 16.0
