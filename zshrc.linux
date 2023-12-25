@@ -64,7 +64,7 @@ export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-autocomplete zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
@@ -104,9 +104,12 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
-
+# Minikube
+alias mkk="minikube kubectl --"
+alias mks="minikube start"
 export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
 export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
+
 # source <(/home/ubuntu/google-cloud-sdk/bin/kubectl completion zsh)
 
 
