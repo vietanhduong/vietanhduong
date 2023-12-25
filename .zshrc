@@ -77,6 +77,7 @@ alias cdgr='cd $(git root)'
 alias todev='ssh dev'
 alias sp='socksproxy'
 alias spd='socksproxy disable'
+alias glp='gl && gp'
 
 ## =============================
 command_exists () {
