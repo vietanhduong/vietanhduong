@@ -123,18 +123,20 @@ window:
 # Font configuration
 font:
   normal:
-    family: Hack
+    family: SF Mono
     style: Regular
   italic:
-    family: Hack
+    family: SF Mono
     style: Regular Italic
   bold:
-    family: Hack
+    family: SF Mono
+    style: Semibold
   bold_italic:
-    family: Hack
+    family: SF Mono
+    style: Semibold Italic
 
   # Point size
-  size: 16.0
+  size: 15.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -159,12 +161,12 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Base 16 Default dark)
+# Colors (xterm)
 colors:
   # Default colors
   primary:
-    background: '0x181818'
-    foreground: '0xd8d8d8'
+    background: '#000000'
+    foreground: '#ffffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
@@ -173,25 +175,25 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x181818'
-    red:     '0xab4642'
-    green:   '0xa1b56c'
-    yellow:  '0xf7ca88'
-    blue:    '0x7cafc2'
-    magenta: '0xba8baf'
-    cyan:    '0x86c1b9'
-    white:   '0xd8d8d8'
+    black:   '#000000'
+    red:     '#cd0000'
+    green:   '#00cd00'
+    yellow:  '#cdcd00'
+    blue:    '#0000ee'
+    magenta: '#cd00cd'
+    cyan:    '#00cdcd'
+    white:   '#e5e5e5'
 
   # Bright colors
   bright:
-    black:   '0x585858'
-    red:     '0xab4642'
-    green:   '0xa1b56c'
-    yellow:  '0xf7ca88'
-    blue:    '0x7cafc2'
-    magenta: '0xba8baf'
-    cyan:    '0x86c1b9'
-    white:   '0xf8f8f8'
+    black:    '#7f7f7f'
+    red:      '#ff0000'
+    green:    '#00ff00'
+    yellow:   '#ffff00'
+    blue:     '#5c5cff'
+    magenta:  '#ff00ff'
+    cyan:     '#00ffff'
+    white:    '#ffffff'
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.
