@@ -123,16 +123,16 @@ window:
 # Font configuration
 font:
   normal:
-    family: SF Mono
+    family: Fira Code
     style: Regular
   italic:
-    family: SF Mono
+    family: Fira Code
     style: Regular Italic
   bold:
-    family: SF Mono
+    family: Fira Code
     style: Semibold
   bold_italic:
-    family: SF Mono
+    family: Fira Code
     style: Semibold Italic
 
   # Point size
