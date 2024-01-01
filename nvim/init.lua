@@ -3,7 +3,6 @@ require("utils")
 
 vim.cmd [[
 syntax on
-set clipboard=unnamedplus
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -30,11 +29,17 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 ]]
 
+
+if vim.g.vscode then
+  -- https://github.com/vscode-neovim/vscode-neovim/issues/298
+  vim.opt.clipboard:append("unnamedplus")
+end
+
 nmap("<C-j>", "<C-d>")
 nmap("<C-k>", "<C-u>")
 
 -- Copy selection to system clipboard
-vmap("<C-c>", '"+y<CR>')
+--vmap("<C-c>", '"+y<CR>')
 
 -- clear search highlight
 nmap("<Esc><Esc>", ":let @/=\"\"<CR>")
