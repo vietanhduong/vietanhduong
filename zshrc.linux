@@ -104,6 +104,7 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
+alias glp="git pull && git push"
 # Minikube
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
