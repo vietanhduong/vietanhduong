@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'asvetliakov/vim-easymotion'
   use { 'junegunn/fzf', run = ":call fzf#install()" }
+  use { 'junegunn/fzf.vim' }
 
   if packer_bootstrap then
     require('packer').sync()
