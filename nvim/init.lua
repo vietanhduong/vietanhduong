@@ -39,7 +39,7 @@ nmap("<C-j>", "<C-d>")
 nmap("<C-k>", "<C-u>")
 
 -- Copy selection to system clipboard
---vmap("<C-c>", '"+y<CR>')
+vmap("<C-c>", '"+y<CR>')
 
 -- clear search highlight
 nmap("<Esc><Esc>", ":let @/=\"\"<CR>")
@@ -50,10 +50,6 @@ nmap("<C-\\>", "<Esc>:Le<CR>")
 -- Switch tab
 nmap("<C-h>", ":tabprevious<CR>")
 nmap("<C-l>", ":tabnext<CR>")
-
--- replace currently selected text with default register
--- without yanking it
-nmap("p", "\"_dP")
 
 -- tab on select
 vmap("<Tab>", ">gv")
