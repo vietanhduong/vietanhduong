@@ -3,6 +3,7 @@ require("utils")
 
 vim.cmd [[
 syntax on
+set clipboard=unnamedplus
 set tabstop=2
 set shiftwidth=2
 set expandtab
