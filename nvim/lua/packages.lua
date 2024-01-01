@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use 'wellle/context.vim'
   use 'chaoren/vim-wordmotion'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'asvetliakov/vim-easymotion'
 
   if packer_bootstrap then
     require('packer').sync()
