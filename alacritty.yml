@@ -163,37 +163,31 @@ draw_bold_text_with_bright_colors: true
 
 # Colors (xterm)
 colors:
-  # Default colors
   primary:
-    background: '#000000'
-    foreground: '#ffffff'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
+    background: "#181818"
+    foreground: "#d4d4d4"
   cursor:
-    text: '0x181818'
-    cursor: '0xd8d8d8'
-
-  # Normal colors
+    text: "#1d1f21"
+    cursor: "#cccccc"
   normal:
-    black:   '#000000'
-    red:     '#cd0000'
-    green:   '#00cd00'
-    yellow:  '#cdcd00'
-    blue:    '#0000ee'
-    magenta: '#cd00cd'
-    cyan:    '#00cdcd'
-    white:   '#e5e5e5'
-
-  # Bright colors
+    black: "#000000"
+    red: "#cd3131"
+    green: "#0dbc79"
+    yellow: "#e5e510"
+    blue: "#2472c8"
+    magenta: "#bc3fbc"
+    cyan: "#11a8cd"
+    white: "#e5e5e5"
   bright:
-    black:    '#7f7f7f'
-    red:      '#ff0000'
-    green:    '#00ff00'
-    yellow:   '#ffff00'
-    blue:     '#5c5cff'
-    magenta:  '#ff00ff'
-    cyan:     '#00ffff'
-    white:    '#ffffff'
+    black: "#666666"
+    red: "#f14c4c"
+    green: "#23d18b"
+    yellow: "#f5f543"
+    blue: "#3b8eea"
+    magenta: "#d670d6"
+    cyan: "#29b8db"
+    white: "#e5e5e5"
+
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.

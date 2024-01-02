@@ -29,6 +29,8 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 ]]
 
+-- Set relative line number
+vim.wo.relativenumber = true
 
 if vim.g.vscode then
   -- https://github.com/vscode-neovim/vscode-neovim/issues/298
