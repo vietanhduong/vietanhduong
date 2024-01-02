@@ -22,7 +22,7 @@ set foldnestmax=10
 set foldlevel=2
 set nofoldenable
 
-highlight Comment ctermfg=Green
+highlight Comment ctermfg=040
 highlight Visual cterm=none ctermbg=239 ctermfg=NONE
 
 highlight ExtraWhitespace ctermbg=red guibg=red
