@@ -123,17 +123,13 @@ window:
 # Font configuration
 font:
   normal:
-    family: Jetbrains Mono
-    style: Regular
+    family: Menlo
   italic:
-    family: Jetbrains Mono
-    style: Regular Italic
+    family: Menlo
   bold:
-    family: Jetbrains Mono
-    style: Semibold
+    family: Menlo
   bold_italic:
-    family: Jetbrains Mono
-    style: Semibold Italic
+    family: Menlo
 
   # Point size
   size: 15.0
