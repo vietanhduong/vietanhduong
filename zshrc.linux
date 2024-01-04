@@ -64,7 +64,7 @@ export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-plugins=(git zsh-autocomplete zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
@@ -178,3 +178,9 @@ if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubun
 export VCPKG_ROOT="$HOME/vcpkg"
 export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
+
+if [ ! -f ~/.fzf.zsh ]; then
+  $(brew --prefix)/opt/fzf/install
+else
+  source ~/.fzf.zsh
+fi
