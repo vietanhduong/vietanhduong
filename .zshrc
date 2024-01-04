@@ -40,7 +40,7 @@ export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-plugins=(git zsh-autocomplete zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
@@ -94,3 +94,8 @@ export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
 [[ -f "${HOME}/.zsh_profile" ]] && source $HOME/.zsh_profile
 
+if [ ! -f ~/.fzf.zsh ]; then
+  $(brew --prefix)/opt/fzf/install
+else
+  source ~/.fzf.zsh
+fi
