@@ -17,10 +17,17 @@ return require('packer').startup(function(use)
 
   use 'wellle/context.vim'
   use 'chaoren/vim-wordmotion'
-  use 'nvim-treesitter/nvim-treesitter'
   use 'asvetliakov/vim-easymotion'
-  use { 'junegunn/fzf', run = ":call fzf#install()" }
-  use { 'junegunn/fzf.vim' }
+  use {'junegunn/fzf', run = ":call fzf#install()"}
+  use {'junegunn/fzf.vim'}
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  -- setup ufo
+  require('ufo').setup({
+    provider_selector = function(bufnr, filetype, buftype)
+        return {'treesitter', 'indent'}
+    end
+  })
 
   if packer_bootstrap then
     require('packer').sync()
