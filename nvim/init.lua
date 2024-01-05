@@ -1,5 +1,7 @@
 require("packages")
 require("utils")
+require("fast_cursor_move")
+require("ts")
 
 vim.cmd [[
 syntax on
