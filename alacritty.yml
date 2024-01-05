@@ -123,13 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Monaco
+    family: SF Mono
   italic:
-    family: Monaco
+    family: SF Mono
   bold:
-    family: Monaco
+    family: SF Mono
+    style: Semibold
   bold_italic:
-    family: Monaco
+    family: SF Mono
+    style: Semibold Italic
 
   # Point size
   size: 15.0
