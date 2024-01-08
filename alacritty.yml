@@ -157,32 +157,33 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (vscode dark)
+# Colors
 colors:
+  name: Tomorrow (dark)
   primary:
-    background: "#181818"
-    foreground: "#d4d4d4"
+    background: "#1d1f21"
+    foreground: "#c5c8c6"
   cursor:
     text: "#1d1f21"
-    cursor: "#cccccc"
+    cursor: "#c5c8c6"
   normal:
-    black: "#000000"
-    red: "#cd3131"
-    green: "#0dbc79"
-    yellow: "#e5e510"
-    blue: "#2472c8"
-    magenta: "#bc3fbc"
-    cyan: "#11a8cd"
-    white: "#e5e5e5"
+    black: "#1d1f21"
+    red: "#cc6666"
+    green: "#b5bd68"
+    yellow: "#f0c674"
+    blue: "#81a2be"
+    magenta: "#b294bb"
+    cyan: "#8abeb7"
+    white: "#c5c8c6"
   bright:
-    black: "#666666"
-    red: "#f14c4c"
-    green: "#23d18b"
-    yellow: "#f5f543"
-    blue: "#3b8eea"
-    magenta: "#d670d6"
-    cyan: "#29b8db"
-    white: "#e5e5e5"
+    black: "#969896"
+    red: "#cc6666"
+    green: "#b5bd68"
+    yellow: "#f0c674"
+    blue: "#81a2be"
+    magenta: "#b294bb"
+    cyan: "#8abeb7"
+    white: "#ffffff"
 
   # Indexed Colors
   #
