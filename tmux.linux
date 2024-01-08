@@ -77,7 +77,7 @@ set -g bell-action none
 setw -g mode-keys vi
 
 # selection color
-setw -g mode-style "bg=colour19,fg=white,bold"
+# setw -g mode-style "bg=colour19,fg=white,bold"
 
 set-option -g history-limit 5000
 
