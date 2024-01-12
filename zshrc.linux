@@ -39,20 +39,6 @@ cdgr() {
   echo "$DST: No such file or directory" >&2 && return 1
 }
 
-kubectl() {
-  if ! type __start_kubectl >/dev/null 2>&1; then
-      source <(command kubectl completion zsh)
-  fi
-  command kubectl "$@"
-}
-
-helm() {
-  if ! type __start_helm >/dev/null 2>&1; then
-      source <(command helm completion zsh)
-  fi
-  command helm "$@"
-}
-
 PROMPT="%F{10}%n"
 PROMPT+="@"
 PROMPT+='${${(%):-%m}#anhdv-}%f:%F{12}%(4~|.../%3~|%~)%f%F{13}$(git_branch)%f'
@@ -178,6 +164,14 @@ if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubun
 export VCPKG_ROOT="$HOME/vcpkg"
 export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
+
+if ! type __start_kubectl >/dev/null 2>&1; then
+    source <(command kubectl completion zsh)
+fi
+
+if ! type __start_helm >/dev/null 2>&1; then
+    source <(command helm completion zsh)
+fi
 
 if [ ! -f ~/.fzf.zsh ]; then
   $(brew --prefix)/opt/fzf/install
