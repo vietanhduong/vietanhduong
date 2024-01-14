@@ -123,13 +123,15 @@ window:
 # Font configuration
 font:
   normal:
-    family: Hack
+    family: SF Mono
   italic:
-    family: Hack
+    family: SF Mono
   bold:
-    family: Hack
+    family: SF Mono
+    style: Semibold
   bold_italic:
-    family: Hack
+    family: SF Mono
+    style: Semibold Italic
 
   # Point size
   size: 15.0
