@@ -124,8 +124,10 @@ window:
 font:
   normal:
     family: SF Mono
+    style: Regular
   italic:
     family: SF Mono
+    style: Regular Italic
   bold:
     family: SF Mono
     style: Semibold
