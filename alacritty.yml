@@ -123,17 +123,13 @@ window:
 # Font configuration
 font:
   normal:
-    family: SF Mono
-    style: Regular
+    family: DejaVu Sans Mono
   italic:
-    family: SF Mono
-    style: Regular Italic
+    family: DejaVu Sans Mono
   bold:
-    family: SF Mono
-    style: Semibold
+    family: DejaVu Sans Mono
   bold_italic:
-    family: SF Mono
-    style: Semibold Italic
+    family: DejaVu Sans Mono
 
   # Point size
   size: 15.0
