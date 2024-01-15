@@ -101,7 +101,7 @@ export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
 
 
 ## =============================
-command_exists () {
+test_cmd () {
   type "$1" &> /dev/null ;
 }
 ## =============================
@@ -110,19 +110,19 @@ command_exists () {
 autoload -U +X bashcompinit && bashcompinit
 
 ## TERRAFORM
-if command_exists terraform; then
+if test_cmd terraform; then
   alias tf="terraform"
   complete -o nospace -C /usr/local/bin/terraform terraform
 fi
 
 ## TERRAGRUNT
-if command_exists terragrunt; then
+if test_cmd terragrunt; then
   alias tg="terragrunt"
   complete -C /usr/local/bin/terraform terragrunt
 fi
 
 ## VAULT
-if command_exists vault; then
+if test_cmd vault; then
   complete -o nospace -C /usr/local/bin/vault vault
 fi
 
@@ -165,12 +165,13 @@ export VCPKG_ROOT="$HOME/vcpkg"
 export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
-if ! type __start_kubectl >/dev/null 2>&1; then
-    source <(command kubectl completion zsh)
+
+if test_cmd kubectl; then
+  source <(command kubectl completion zsh)
 fi
 
-if ! type __start_helm >/dev/null 2>&1; then
-    source <(command helm completion zsh)
+if test_cmd helm; then
+  source <(command helm completion zsh)
 fi
 
 if [ ! -f ~/.fzf.zsh ]; then
