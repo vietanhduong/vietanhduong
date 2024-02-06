@@ -123,17 +123,13 @@ window:
 # Font configuration
 font:
   normal:
-    family: Fira Code
-    style: Regular
+    family: Berkeley Mono
   italic:
-    family: Fira Code
-    style: Regular Italic
+    family: Berkeley Mono
   bold:
-    family: Fira Code
-    style: SemiBold
+    family: Berkeley Mono
   bold_italic:
-    family: Fira Code
-    style: SemiBold Italic
+    family: Berkeley Mono
 
   # Point size
   size: 16.0
