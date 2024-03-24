@@ -159,42 +159,32 @@ draw_bold_text_with_bright_colors: true
 
 # Colors
 colors:
+  # Default colors
   primary:
-    background: '#000000'
-    foreground: '#dddddd'
-  normal:
-    black:   '#000000'
-    red:     '#cc0403'
-    green:   '#19cb00'
-    yellow:  '#cecb00'
-    blue:    '#0d73cc'
-    magenta: '#cb1ed1'
-    cyan:    '#0dcdcd'
-    white:   '#dddddd'
-  bright:
-    black:   '#767676'
-    red:     '#f2201f'
-    green:   '#23fd00'
-    yellow:  '#fffd00'
-    blue:    '#1a8fff'
-    magenta: '#fd28ff'
-    cyan:    '#14ffff'
-    white:   '#ffffff'
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  #indexed_colors: []
+    background: '#0A0E14'
+    foreground: '#B3B1AD'
 
-  # Transparent cell backgrounds
-  #
-  # Whether or not `window.opacity` applies to all cell backgrounds or only to
-  # the default background. When set to `true` all cells will be transparent
-  # regardless of their background color.
-  #transparent_background_colors: false
+  # Normal colors
+  normal:
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  # Bright colors
+  bright:
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
 
 # Bell
 #
