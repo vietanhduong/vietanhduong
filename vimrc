@@ -25,7 +25,7 @@ set nofoldenable
 set relativenumber
 
 " hook set comment color is green
-highlight Comment ctermfg=040
+highlight Comment ctermfg=208
 
 " visual color
 highlight Visual cterm=none ctermbg=239 ctermfg=NONE
