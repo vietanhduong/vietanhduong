@@ -179,3 +179,11 @@ if [ ! -f ~/.fzf.zsh ]; then
 else
   source ~/.fzf.zsh
 fi
+
+# added by pipx (https://github.com/pipxproject/pipx)
+export PATH="/home/ubuntu/.local/bin:$PATH"
+
+# added by pipx (https://github.com/pipxproject/pipx)
+export PATH="/home/ubuntu/.local/bin:$PATH"
+
+export PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
