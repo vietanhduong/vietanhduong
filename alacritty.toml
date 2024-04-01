@@ -1,0 +1,70 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#4c4c4c"
+blue = "#8aaecf"
+cyan = "#86bfc7"
+green = "#79ae97"
+magenta = "#e296b7"
+red = "#d89898"
+white = "#ffffff"
+yellow = "#ecd899"
+
+[colors.normal]
+black = "#111111"
+blue = "#6394bf"
+cyan = "#5eaab5"
+green = "#4d9375"
+magenta = "#d9739f"
+red = "#cb7676"
+white = "#ffffff"
+yellow = "#e6cc77"
+
+[colors.primary]
+background = "#121212"
+foreground = "#c8c5b8"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "Berkeley Mono"
+
+[font.bold_italic]
+family = "Berkeley Mono"
+
+[font.italic]
+family = "Berkeley Mono"
+
+[font.normal]
+family = "Berkeley Mono"
+
+[[keyboard.bindings]]
+chars = "\u001BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BB"
+key = "Left"
+mods = "Alt"
+
+[selection]
+save_to_clipboard = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+dynamic_padding = true
+option_as_alt = "Both"
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.padding]
+x = 2
+y = 2
