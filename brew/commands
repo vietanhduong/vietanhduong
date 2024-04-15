@@ -19,3 +19,5 @@ httpie
 openssl
 google-cloud-sdk
 fzf
+ripgrep
+bat
