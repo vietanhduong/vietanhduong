@@ -1,5 +1,5 @@
 export ZSH="/Users/${USER}/.oh-my-zsh"
-git_branch() {
+function git_branch() {
   local ref=$(git symbolic-ref --short HEAD 2> /dev/null)
   if [ -n "${ref}" ]; then
     echo " (${ref})"
@@ -8,7 +8,20 @@ git_branch() {
   fi
 }
 
-cdgr() {
+function cmd_exists() {
+  cmd="$1"
+  if [[ -z "$cmd" ]]; then
+    echo "Empty test command" >&2
+    return 1
+  fi
+
+  if ! command -v "$cmd" &> /dev/null
+  then
+    return 1
+  fi
+}
+
+function cdgr() {
   REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null)
   if [[ -z $REPO_ROOT ]]; then
     echo "Error: Not a git repository (or any of the parent directories): .git" >&2
@@ -79,18 +92,18 @@ alias sp='socksproxy'
 alias spd='socksproxy disable'
 alias glp='gl && gp'
 
-## =============================
-command_exists () {
-  type "$1" &> /dev/null ;
-}
-## =============================
-
 # load bash autocomplete
 autoload -U +X bashcompinit && bashcompinit
 
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+
+
+cmd_exists "terraform" && alias tf=terraform
+cmd_exists "terragrunt" && alias tg=terragrunt
+
+
 
 [[ -f "${HOME}/.zsh_profile" ]] && source $HOME/.zsh_profile
 
