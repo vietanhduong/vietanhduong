@@ -1,3 +1,7 @@
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 
+cmd_exists "kubectl" && alias k=kubectl
+cmd_exists "kubectx" && alias kctx=kubectx
+cmd_exists "kubens" && alias kns=kubens
+
