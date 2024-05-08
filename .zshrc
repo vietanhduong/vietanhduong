@@ -102,6 +102,9 @@ export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
 cmd_exists "terraform" && alias tf=terraform
 cmd_exists "terragrunt" && alias tg=terragrunt
+if cmd_exists "kubectl"; then
+  source <(kubectl completion zsh)
+fi
 
 
 
