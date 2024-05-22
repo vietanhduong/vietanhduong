@@ -2,28 +2,28 @@
 draw_bold_text_with_bright_colors = true
 
 [colors.bright]
-black = "#4c4c4c"
-blue = "#8aaecf"
-cyan = "#86bfc7"
-green = "#79ae97"
-magenta = "#e296b7"
-red = "#d89898"
-white = "#ffffff"
-yellow = "#ecd899"
+black = '0x3c3836'
+red = '0xea6962'
+green = '0xa9b665'
+yellow = '0xd8a657'
+blue = '0x7daea3'
+magenta = '0xd3869b'
+cyan = '0x89b482'
+white = '0xd4be98'
 
 [colors.normal]
-black = "#111111"
-blue = "#6394bf"
-cyan = "#5eaab5"
-green = "#4d9375"
-magenta = "#d9739f"
-red = "#cb7676"
-white = "#ffffff"
-yellow = "#e6cc77"
+black = '0x3c3836'
+red = '0xea6962'
+green = '0xa9b665'
+yellow = '0xd8a657'
+blue = '0x7daea3'
+magenta = '0xd3869b'
+cyan = '0x89b482'
+white = '0xd4be98'
 
 [colors.primary]
-background = "#121212"
-foreground = "#c8c5b8"
+background = '0x282828'
+foreground = '0xd4be98'
 
 [env]
 TERM = "alacritty"
@@ -32,16 +32,16 @@ TERM = "alacritty"
 size = 14.0
 
 [font.bold]
-family = "Berkeley Mono"
+family = "Menlo"
 
 [font.bold_italic]
-family = "Berkeley Mono"
+family = "Menlo"
 
 [font.italic]
-family = "Berkeley Mono"
+family = "Menlo"
 
 [font.normal]
-family = "Berkeley Mono"
+family = "Menlo"
 
 [[keyboard.bindings]]
 chars = "\u001BF"
