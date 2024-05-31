@@ -5,4 +5,7 @@ SOCKS_PROXY_PORT=1080
 if [[ -S "${SOCKS_PROXY_PATH}" ]]; then
   export http_proxy="socks5://127.0.0.1:${SOCKS_PROXY_PORT}"
   export https_proxy="socks5://127.0.0.1:${SOCKS_PROXY_PORT}"
+else
+  unset http_proxy
+  unset https_proxy
 fi
