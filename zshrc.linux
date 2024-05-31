@@ -180,6 +180,8 @@ else
   source ~/.fzf.zsh
 fi
 
+[[ -f ~/.zsh_profile ]] && source ~/.zsh_profile
+
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
 
