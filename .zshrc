@@ -91,6 +91,7 @@ alias todev='ssh dev'
 alias sp='socksproxy'
 alias spd='socksproxy disable'
 alias glp='gl && gp'
+alias ssh="TERM=xterm-256color $(which ssh)"
 
 # load bash autocomplete
 autoload -U +X bashcompinit && bashcompinit
