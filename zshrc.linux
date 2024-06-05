@@ -50,7 +50,7 @@ export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting zsh-fzf-history-search)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
@@ -174,12 +174,6 @@ if test_cmd helm; then
   source <(command helm completion zsh)
 fi
 
-if [ ! -f ~/.fzf.zsh ]; then
-  $(brew --prefix)/opt/fzf/install
-else
-  source ~/.fzf.zsh
-fi
-
 alias socks_connect="socksproxy && [[ -f ~/.socks_profile ]] && source ~/.socks_profile"
 alias socks_disconnect="socksproxy disable && [[ -f ~/.socks_profile ]] && source ~/.socks_profile"
 
@@ -191,4 +185,3 @@ export PATH="/home/ubuntu/.local/bin:$PATH"
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
 
-export PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
