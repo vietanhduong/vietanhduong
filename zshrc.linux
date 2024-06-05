@@ -174,10 +174,7 @@ if test_cmd helm; then
   source <(command helm completion zsh)
 fi
 
-alias socks_connect="socksproxy && [[ -f ~/.socks_profile ]] && source ~/.socks_profile"
-alias socks_disconnect="socksproxy disable && [[ -f ~/.socks_profile ]] && source ~/.socks_profile"
-
-[[ -f ~/.socks_profile ]] && source ~/.socks_profile
+[[ -f $HOME/.zsh_profile ]] && source ~/.zsh_profile
 
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
