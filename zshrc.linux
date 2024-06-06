@@ -155,12 +155,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
-
 export VCPKG_ROOT="$HOME/vcpkg"
 export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
@@ -183,3 +177,9 @@ export PATH="/home/ubuntu/.local/bin:$PATH"
 export PATH="/home/ubuntu/.local/bin:$PATH"
 export PATH="/usr/local/go:$PATH"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
