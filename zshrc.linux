@@ -181,4 +181,5 @@ export PATH="/home/ubuntu/.local/bin:$PATH"
 
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
+export PATH="/usr/local/go:$PATH"
 
