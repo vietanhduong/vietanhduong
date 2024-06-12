@@ -175,7 +175,7 @@ export PATH="/home/ubuntu/.local/bin:$PATH"
 
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
-export PATH="/usr/local/go:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
 
 
 # The next line updates PATH for the Google Cloud SDK.
