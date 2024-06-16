@@ -32,19 +32,19 @@ TERM = "xterm-256color"
 size = 14.0
 
 [font.bold]
-family = "Jetbrains Mono"
+family = "SF Mono"
 style = "SemiBold"
 
 [font.bold_italic]
-family = "Jetbrains Mono"
+family = "SF Mono"
 style = "Medium Italic"
 
 [font.italic]
-family = "Jetbrains Mono"
+family = "SF Mono"
 style = "Light Italic"
 
 [font.normal]
-family = "Jetbrains Mono"
+family = "SF Mono"
 style = "Light"
 
 [[keyboard.bindings]]
