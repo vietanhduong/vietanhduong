@@ -6,6 +6,7 @@ config.font = wezterm.font 'SF Mono'
 config.font_size = 14.0
 
 -- config.color_scheme = 'Gruvbox Dark (Gogh)'
+config.color_scheme = 'Wombat'
 
 config.window_padding = {
   left = '1cell',

@@ -101,9 +101,9 @@ setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 
 # status panel
 set -g status-position bottom
-set -g status-bg colour20
+set -g status-bg colour233
 set -g status-fg colour15
-set -g status-left '#[fg=colour220,bold] [#(whoami)@#{host}] #[fg=colour15]|'
+set -g status-left '#[fg=colour220,bold] [#(whoami)@#{host}] '
 set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
 set -g status-right-length 50
 set -g status-left-length 30
