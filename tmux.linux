@@ -109,5 +109,5 @@ set -g status-right-length 50
 set -g status-left-length 30
 setw -g mode-keys vi
 
-setw -g window-status-current-format ' #[bg=colour15,fg=colour88,bold] #I:#W#F '
+setw -g window-status-current-format ' #[bg=colour245,fg=colour233,bold] #I:#W#F '
 setw -g window-status-format ' #[fg=colour250]#I:#W#[fg=colour244]#F '
