@@ -50,7 +50,7 @@ export PATH=/usr/local/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-plugins=(git zsh-syntax-highlighting zsh-fzf-history-search)
+plugins=(git zsh-syntax-highlighting zsh-fzf-history-search kubectl helm)
 
 source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
@@ -84,8 +84,8 @@ alias tp="telepresence"
 alias k="kubectl"
 alias ktun="k tunnel"
 alias ktop="k ktop"
-alias kctx="kubectl ctx"
-alias kns="kubectl ns"
+alias kctx="kubectx"
+alias kns="kubens"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
@@ -94,20 +94,14 @@ alias glp="git pull && git push"
 # Minikube
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
-export PATH=/usr/lib/google-cloud-sdk/bin:$PATH
-export PATH=${KREW_ROOT:-$HOME/.krew}/bin:$PATH
 
-# source <(/home/ubuntu/google-cloud-sdk/bin/kubectl completion zsh)
-
+autoload -U compinit && compinit
 
 ## =============================
 test_cmd () {
   type "$1" &> /dev/null ;
 }
 ## =============================
-
-# load bash autocomplete
-autoload -U +X bashcompinit && bashcompinit
 
 ## TERRAFORM
 if test_cmd terraform; then
@@ -126,8 +120,6 @@ if test_cmd vault; then
   complete -o nospace -C /usr/local/bin/vault vault
 fi
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
@@ -136,15 +128,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
-complete -C ~/.bin/terraform
-
-export PATH="${PATH}:${HOME}/.krew/bin"
 export GPG_TTY=$(tty)
 
-[[ -f ~/.iterm2_shell_integration.zsh ]] && source ~/.iterm2_shell_integration.zsh
-
 [ -f /usr/share/google-cloud-sdk/completion.zsh.inc ] && source /usr/share/google-cloud-sdk/completion.zsh.inc
-[ -f "$HOME/.zprofile" ] && source ~/.zprofile
 
 export GO_PATH=~/go
 export PATH=$PATH:/$GO_PATH/bin
@@ -160,18 +146,7 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
 
-if test_cmd kubectl; then
-  source <(command kubectl completion zsh)
-fi
-
-if test_cmd helm; then
-  source <(command helm completion zsh)
-fi
-
 [[ -f $HOME/.zsh_profile ]] && source ~/.zsh_profile
-
-# added by pipx (https://github.com/pipxproject/pipx)
-export PATH="/home/ubuntu/.local/bin:$PATH"
 
 # added by pipx (https://github.com/pipxproject/pipx)
 export PATH="/home/ubuntu/.local/bin:$PATH"
