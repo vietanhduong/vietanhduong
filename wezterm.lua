@@ -5,7 +5,7 @@ local config = wezterm.config_builder()
 config.font = wezterm.font 'Jetbrains Mono'
 config.font_size = 14.0
 
-config.color_scheme = 'Wombat'
+config.color_scheme = 'rose-pine'
 config.use_fancy_tab_bar = false
 config.keys = {
   {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}},
