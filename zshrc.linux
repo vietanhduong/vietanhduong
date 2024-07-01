@@ -91,9 +91,11 @@ alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
 alias glp="git pull && git push"
+alias sd="sudo shutdown -h now"
 # Minikube
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
+
 
 autoload -U compinit && compinit
 
