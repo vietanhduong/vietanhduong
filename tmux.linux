@@ -104,7 +104,7 @@ set -g status-position bottom
 set -g status-bg colour0
 set -g status-fg colour15
 set -g status-left '#[fg=colour11,bold] [#(whoami)@#{host}] '
-set -g status-right '#[fg=colour15,bg=colour8,bold] %d/%m #[fg=colour0,bg=colour7,bold] %H:%M:%S '
+set -g status-right '#[fg=colour15,bg=colour8,bold] %d/%m #[fg=colour233,bg=colour7,bold] %H:%M:%S '
 set -g status-right-length 50
 set -g status-left-length 30
 setw -g mode-keys vi
