@@ -97,7 +97,7 @@ alias mkk="minikube kubectl --"
 alias mks="minikube start"
 
 
-autoload -U compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
 
 ## =============================
 test_cmd () {
@@ -108,13 +108,13 @@ test_cmd () {
 ## TERRAFORM
 if test_cmd terraform; then
   alias tf="terraform"
-  complete -o nospace -C /usr/local/bin/terraform terraform
+  complete -o nospace -C $(which terraform) terraform
 fi
 
 ## TERRAGRUNT
 if test_cmd terragrunt; then
   alias tg="terragrunt"
-  complete -C /usr/local/bin/terraform terragrunt
+  complete -o nospace -C $(which terragrunt) terragrunt
 fi
 
 ## VAULT
@@ -160,3 +160,5 @@ if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
+
+
