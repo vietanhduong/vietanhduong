@@ -2,10 +2,10 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font 'Jetbrains Mono'
+config.font = wezterm.font 'Menlo'
 config.font_size = 14.0
 
-config.color_scheme = 'Rosé Pine (Gogh)'
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 config.use_fancy_tab_bar = false
 config.keys = {
   {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}},
