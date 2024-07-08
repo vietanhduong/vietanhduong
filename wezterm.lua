@@ -5,7 +5,8 @@ local config = wezterm.config_builder()
 config.font = wezterm.font 'Menlo'
 config.font_size = 14.0
 
-config.color_scheme = 'duckbones'
+config.color_scheme = 'Gruvbox dark, hard (base16)'
+
 
 config.use_fancy_tab_bar = false
 config.keys = {
