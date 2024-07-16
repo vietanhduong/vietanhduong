@@ -6,7 +6,7 @@ config.font = wezterm.font 'Fira Code'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 14.0
 
-config.color_scheme = 'Tomorrow Night (Gogh)'
+config.color_scheme = 'Gruvbox dark, hard (base16)'
 
 config.window_padding = {
   left = "0.5cell",
