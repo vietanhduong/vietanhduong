@@ -134,8 +134,9 @@ export GPG_TTY=$(tty)
 
 [ -f /usr/share/google-cloud-sdk/completion.zsh.inc ] && source /usr/share/google-cloud-sdk/completion.zsh.inc
 
-export GO_PATH=~/go
-export PATH=$PATH:/$GO_PATH/bin
+
+
+export PATH=$PATH:/usr/local/go/bin
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export NVM_DIR="$HOME/.nvm"
