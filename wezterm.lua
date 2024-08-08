@@ -6,7 +6,39 @@ config.font = wezterm.font 'Zed Mono'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 14.0
 
-config.color_scheme = 'Gruvbox dark, hard (base16)'
+-- config.color_scheme = 'Macintosh (base16)'
+
+config.colors = {
+   foreground = "rgb(255,255,255)",
+      background = "rgb(30,30,30)",
+      cursor_bg = "rgb(157,157,157)",
+      cursor_fg = "rgb(157,157,157)",
+      selection_bg = "#424242",
+      selection_fg = "#ffffff",
+
+      ansi = {
+        "rgb(0,0,0)",  -- black
+        "rgb(202,51,36)",  -- red
+        "rgb(58,191,38)",  -- green
+        "rgb(170,171,37)",  -- yellow
+        "rgb(86,31,244)",  -- blue
+        "rgb(219,39,219)",  -- magenta
+        "rgb(55,185,199)",  -- cyan
+        "rgb(199,199,199)",  -- white
+      },
+      brights = {
+        "rgb(125,125,125)",  -- bright black
+        "rgb(252,51,32)",  -- bright red
+        "rgb(55,239,33)",  -- bright green
+        "rgb(235,239,24)",  -- bright yellow
+        "rgb(207,125,255)",  -- bright blue
+        "rgb(251,30,255)",  -- bright magenta
+        "rgb(50,244,241)",  -- bright cyan
+        "rgb(232,232,232)",  -- bright white
+      }
+}
+
+config.bold_brightens_ansi_colors = false
 
 config.window_padding = {
   left = "0.5cell",
@@ -73,6 +105,6 @@ config.window_padding = {
   bottom = 0,
 }
 
-config.window_background_opacity = 0.95
+-- config.window_background_opacity = 0.95
 
 return config
