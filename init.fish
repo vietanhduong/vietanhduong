@@ -7,6 +7,7 @@ set -xg USE_GKE_GCLOUD_AUTH_PLUGIN True
 
 set -xg CLICOLOR 1
 set -xg LSCOLORS ExFxBxDxCxegedabagacad
+set -xg TERM xterm-256color
 
 alias vim="nvim"
 alias vi="nvim"
@@ -45,7 +46,7 @@ alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
 alias glp="git pull && git push"
 alias sd="sudo shutdown -h now"
-alias ssh="TERM=xterm-256color $(which ssh)"
+alias todev='ssh dev.local'
 
 # Minikube
 alias mkk="minikube kubectl --"
