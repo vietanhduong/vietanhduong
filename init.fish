@@ -1,13 +1,12 @@
 set -xg GPG_TTY $(tty)
-set -xg EDITOR 'nvim'
+set -xg EDITOR nvim
 set -U fish_user_paths $fish_user_paths /usr/local/sbin
 set -xg LC_ALL en_US.UTF-8
 set -xg LANG en_US.UTF-8
 set -xg USE_GKE_GCLOUD_AUTH_PLUGIN True
 
-set -xg CLICOLOR 1
-set -xg LSCOLORS ExFxBxDxCxegedabagacad
-set -xg COLORTERM truecolor
+# disable greeting message
+set -g fish_greeting
 
 alias vim="nvim"
 alias vi="nvim"
@@ -67,10 +66,7 @@ alias gc="git commit"
 
 # color
 set -U fish_color_command green
-
-if test "$COLORTERM" = truecolor
-   set -g fish_term24bit 1
-end
+set -g fish_term24bit 1
 
 # binding
 bind \cx\ce edit_command_buffer
@@ -79,7 +75,6 @@ bind \cx\ce edit_command_buffer
 if test -d /opt/homebrew
   /opt/homebrew/bin/brew shellenv | source
 end
-
 
 # cdgd -- change directory to git directory
 # if no input => go to the repo root
