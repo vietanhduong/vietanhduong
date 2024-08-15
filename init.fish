@@ -48,6 +48,9 @@ alias glp="git pull && git push"
 alias sd="sudo shutdown -h now"
 alias todev='ssh dev.local'
 
+alias tg="terragrunt"
+alias tf="terraform"
+
 # Minikube
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
@@ -61,6 +64,16 @@ alias ga="git add"
 alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
+
+# true color
+if test "$COLORTERM" = truecolor
+   set -g fish_term24bit 1
+end
+
+# brew setup
+if test -d /opt/homebrew
+  /opt/homebrew/bin/brew shellenv | source
+end
 
 
 # cdgd -- change directory to git directory
@@ -89,11 +102,6 @@ function cdgd
 
   echo "The path '$argv[1]' does not exit" >&2
   return 1
-end
-
-
-if test -d /opt/homebrew
-  /opt/homebrew/bin/brew shellenv | source
 end
 
 
