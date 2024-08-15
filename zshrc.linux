@@ -81,7 +81,6 @@ alias dcu="dc up"
 alias dcd="dc down"
 alias dcs="dc stop"
 alias tp="telepresence"
-alias k="kubectl"
 alias ktun="k tunnel"
 alias ktop="k ktop"
 alias kctx="kubectx"
@@ -97,7 +96,7 @@ alias mkk="minikube kubectl --"
 alias mks="minikube start"
 
 
-autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
 
 ## =============================
 test_cmd () {
@@ -135,7 +134,6 @@ export GPG_TTY=$(tty)
 [ -f /usr/share/google-cloud-sdk/completion.zsh.inc ] && source /usr/share/google-cloud-sdk/completion.zsh.inc
 
 
-
 export PATH=$PATH:/usr/local/go/bin
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -145,7 +143,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export VCPKG_ROOT="$HOME/vcpkg"
-export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/opt/llvm@15/bin:$HOME/.local/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/opt/clang-format/bin:$PATH"
 
 
@@ -161,5 +159,6 @@ if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ubuntu/goo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
+
 
 
