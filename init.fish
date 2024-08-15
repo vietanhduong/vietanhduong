@@ -66,7 +66,7 @@ alias gc="git commit"
 
 # color
 set -U fish_color_command green
-set -g fish_term24bit 1
+set -U fish_color_param white
 
 # binding
 bind \cx\ce edit_command_buffer
