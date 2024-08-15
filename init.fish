@@ -65,6 +65,9 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
 
+# binding
+bind \cx\ce edit_command_buffer
+
 # true color
 if test "$COLORTERM" = truecolor
    set -g fish_term24bit 1
