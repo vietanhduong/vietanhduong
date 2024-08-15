@@ -49,7 +49,16 @@ alias sd="sudo shutdown -h now"
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
 
-# omf theme default
+# Git
+alias gst="git status"
+alias gl="git pull"
+alias gp="git push"
+alias gd="git diff"
+alias ga="git add"
+alias gb="git branch"
+alias gco="git checkout"
+alias gc="git commit"
+
 
 # cdgd -- change directory to git directory
 # if no input => go to the repo root
@@ -80,3 +89,6 @@ function cdgd
 end
 
 
+if test -d /opt/homebrew
+  /opt/homebrew/bin/brew shellenv | source
+end

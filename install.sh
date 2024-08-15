@@ -77,3 +77,10 @@ sudo spctl --master-disable
 # hook ttl 65 at startup
 sudo cp com.anhdv.ttl.plist /Library/LaunchDaemons
 sudo launchctl load /Library/LaunchDaemons/com.anhdv.ttl.plist
+
+
+# install omf
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+
+
+
