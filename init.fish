@@ -7,7 +7,7 @@ set -xg USE_GKE_GCLOUD_AUTH_PLUGIN True
 
 set -xg CLICOLOR 1
 set -xg LSCOLORS ExFxBxDxCxegedabagacad
-set -xg TERM xterm-256color
+set -xg COLORTERM truecolor
 
 alias vim="nvim"
 alias vi="nvim"
@@ -65,13 +65,15 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
 
-# binding
-bind \cx\ce edit_command_buffer
+# color
+set -U fish_color_command green
 
-# true color
 if test "$COLORTERM" = truecolor
    set -g fish_term24bit 1
 end
+
+# binding
+bind \cx\ce edit_command_buffer
 
 # brew setup
 if test -d /opt/homebrew
