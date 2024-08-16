@@ -151,3 +151,27 @@ function fish_prompt --description 'Write out the prompt'
     echo -n -s (prompt_login)' ' (set_color $color_cwd) (prompt_pwd) $vcs_color(fish_vcs_prompt) $normal " "$prompt_status " " $suffix " "
 end
 
+
+#
+# vpn
+
+function vpn
+  if not test -f /etc/systemd/system/enable-vpn.service
+    echo "No VPN service set up!" >&2
+    return 1
+  end
+  set arg
+  if test (count $argv) -ne 0
+    set arg $argv[1]
+  end
+
+  switch $arg
+    case stop
+      sudo service enable-vpn stop
+    case status
+      sudo systemctl status enable-vpn status
+    case '*'
+      sudo service enable-vpn start
+  end
+end
+
