@@ -76,14 +76,22 @@ if test -d /home/linuxbrew/.linuxbrew # Linux
 	set -gx HOMEBREW_PREFIX "/home/linuxbrew/.linuxbrew"
 	set -gx HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
 	set -gx HOMEBREW_REPOSITORY "$HOMEBREW_PREFIX/Homebrew"
+	set -gx HOMEBREW_CASKROOM "$HOMEBREW_PREFIX/Caskroom"
 else if test -d /opt/homebrew # MacOS
 	set -gx HOMEBREW_PREFIX "/opt/homebrew"
 	set -gx HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
 	set -gx HOMEBREW_REPOSITORY "$HOMEBREW_PREFIX/homebrew"
+	set -gx HOMEBREW_CASKROOM "$HOMEBREW_PREFIX/Caskroom"
 end
 fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 ! set -q MANPATH; and set MANPATH ''; set -gx MANPATH "$HOMEBREW_PREFIX/share/man" $MANPATH;
 ! set -q INFOPATH; and set INFOPATH ''; set -gx INFOPATH "$HOMEBREW_PREFIX/share/info" $INFOPATH;
+
+
+# gcloud setup
+if test -f $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+  source $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+end
 
 
 # cdgd -- change directory to git directory
