@@ -1,7 +1,6 @@
 exa
 bash
-zsh
-node
+fish
 telnet
 tmux
 neovim
@@ -21,3 +20,4 @@ google-cloud-sdk
 fzf
 ripgrep
 bat
+btop
