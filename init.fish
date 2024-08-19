@@ -50,6 +50,14 @@ alias todev='ssh dev.local'
 alias tg="terragrunt"
 alias tf="terraform"
 
+if test -x /usr/bin/pbcopy
+  alias pbcopy=/usr/bin/pbcopy
+end
+
+if test -x /usr/bin/pbpaste
+  alias pbpaste=/usr/bin/pbpaste
+end
+
 # Minikube
 alias mkk="minikube kubectl --"
 alias mks="minikube start"
@@ -91,6 +99,11 @@ fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 # gcloud setup
 if test -f $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
   source $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
+end
+
+# cargo
+if test -f $HOME/.cargo/env.fish
+  source "$HOME/.cargo/env.fish"
 end
 
 
