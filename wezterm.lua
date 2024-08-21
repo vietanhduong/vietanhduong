@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font 'Menlo'
+config.font = wezterm.font 'Monaco'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 14.0
 
