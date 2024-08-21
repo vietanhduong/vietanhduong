@@ -96,11 +96,6 @@ fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 ! set -q INFOPATH; and set INFOPATH ''; set -gx INFOPATH "$HOMEBREW_PREFIX/share/info" $INFOPATH;
 
 
-# gcloud setup
-if test -f $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
-  source $HOMEBREW_CASKROOM/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
-end
-
 # cargo
 if test -f $HOME/.cargo/env.fish
   source "$HOME/.cargo/env.fish"
@@ -175,7 +170,7 @@ end
 
 #
 # vpn
-
+#
 function vpn
   if not test -f /etc/systemd/system/enable-vpn.service
     echo "No VPN service set up!" >&2

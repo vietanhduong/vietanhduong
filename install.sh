@@ -78,9 +78,12 @@ sudo spctl --master-disable
 sudo cp com.anhdv.ttl.plist /Library/LaunchDaemons
 sudo launchctl load /Library/LaunchDaemons/com.anhdv.ttl.plist
 
+# install fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-# install omf
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
+# gcloud autocompelete
+fisher install lgathy/google-cloud-sdk-fish-completion
+# kubectl autocomplete
+fisher install evanlucas/fish-kubectl-completions
 
 
