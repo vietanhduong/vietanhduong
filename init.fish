@@ -71,6 +71,7 @@ alias ga="git add"
 alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
+alias grb="git rebase"
 
 # color
 set -U fish_color_command green
