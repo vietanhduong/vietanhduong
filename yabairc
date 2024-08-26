@@ -1,0 +1,28 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+# padding
+yabai -m config top_padding 5
+yabai -m config bottom_padding 5
+yabai -m config left_padding 5
+yabai -m config right_padding 5
+yabai -m config window_gap 5
+
+# mouse settings
+yabai -m config mouse_follows_focus on
+
+## left click + drag
+yabai -m config mouse_modifier alt
+
+## right click + drag
+yabai -m config mouse_action2 resize
+yabai -m config mouse_drop_action swap
+
+
+# Disable for specific apps
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Raycast Settings$" manage=off
