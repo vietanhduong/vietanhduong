@@ -131,6 +131,21 @@ function cdgd
   return 1
 end
 
+function app_id --description "Apple Bundle ID"
+  # return error if current os is not Darwin
+  if test (uname) != "Darwin"
+    echo "Error: This function is only available on macOS" >&2
+    return 1
+  end
+
+  if test (count $argv) -eq 0
+    echo "Usage: app_id <app_name>" >&2
+    return 1
+  end
+
+  set app_name $argv[1]
+  osascript -e "id of app \"$app_name\""
+end
 
 #
 # customize fish prompt
