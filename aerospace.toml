@@ -207,7 +207,7 @@ run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
-run = 'move-node-to-workspace F'
+run = ['layout floating', 'move-node-to-workspace F']
 
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
@@ -220,3 +220,7 @@ run = 'move-node-to-workspace W'
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'
 run = 'move-node-to-workspace N'
+
+[[on-window-detected]]
+if.app-id = 'com.openapi.chat'
+run = 'move-node-to-workspace O'
