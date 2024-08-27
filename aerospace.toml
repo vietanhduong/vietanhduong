@@ -170,7 +170,7 @@ alt-shift-l = ['join-with right', 'mode main']
 
 
 [[on-window-detected]]
-if.app-id = 'com.tdesktop.Telegram'
+if.app-name-regex-substring= 'Telegram'
 run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
@@ -192,6 +192,11 @@ run = 'move-node-to-workspace T'
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace T'
+
+[[on-window-detected]]
+if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
+if.app-id = 'com.google.Chrome'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
@@ -224,3 +229,4 @@ run = 'move-node-to-workspace N'
 [[on-window-detected]]
 if.app-name-regex-substring = 'ChatGPT'
 run = 'move-node-to-workspace O'
+
