@@ -206,7 +206,7 @@ if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.finder'
+if.app-name-regex-substring= 'Finder'
 run = ['layout floating', 'move-node-to-workspace F']
 
 [[on-window-detected]]
@@ -222,5 +222,5 @@ if.app-id = 'com.apple.Notes'
 run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
-if.app-id = 'com.openapi.chat'
+if.app-name-regex-substring = 'ChatGPT'
 run = 'move-node-to-workspace O'
