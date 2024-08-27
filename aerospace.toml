@@ -112,6 +112,7 @@ alt-3 = 'workspace C' # Chat
 alt-4 = 'workspace B' # Browser
 alt-5 = 'workspace N' # Notes
 alt-6 = 'workspace F' # Finder
+alt-0 = 'workspace O' # Other
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace W'
@@ -120,6 +121,7 @@ alt-shift-3 = 'move-node-to-workspace C'
 alt-shift-4 = 'move-node-to-workspace B'
 alt-shift-5 = 'move-node-to-workspace N'
 alt-shift-6 = 'move-node-to-workspace F'
+alt-shift-0 = 'move-node-to-workspace O'
 
 
 alt-shift-f = 'fullscreen'
