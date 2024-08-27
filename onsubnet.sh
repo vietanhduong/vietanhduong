@@ -21,11 +21,12 @@ regexp="^$(sed 's/\./\\./g' <<<"$1")"
 
 if [[ "$(uname)" == "Darwin" ]] ; then
   ifconfig | grep -F 'inet ' | grep -Fv 127.0.0. | cut -d ' ' -f 2 | grep -Eq "$regexp"
+  echo "Match"
 else
   hostname -I | tr -s " " "\012" | grep -Fv 127.0.0. | grep -Eq "$regexp"
 fi
 
-if [[ $? == 0 ]]; then 
+if [[ $? == 0 ]]; then
   exit $on
 else
   exit $off
