@@ -12,7 +12,9 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = [
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -53,12 +55,13 @@ on-focus-changed = "move-mouse window-lazy-center"
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 5
-inner.vertical = 5
-outer.left = 5
-outer.bottom = 5
-outer.top = 5
-outer.right = 5
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
+
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -112,7 +115,12 @@ alt-3 = 'workspace C' # Chat
 alt-4 = 'workspace B' # Browser
 alt-5 = 'workspace N' # Notes
 alt-6 = 'workspace F' # Finder
+alt-9 = 'workspace E' # Endue
 alt-0 = 'workspace O' # Other
+
+alt-b = 'workspace --wrap-around prev'
+alt-f = 'workspace --wrap-around next'
+
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace W'
@@ -121,15 +129,16 @@ alt-shift-3 = 'move-node-to-workspace C'
 alt-shift-4 = 'move-node-to-workspace B'
 alt-shift-5 = 'move-node-to-workspace N'
 alt-shift-6 = 'move-node-to-workspace F'
+alt-shift-9 = 'move-node-to-workspace E'
 alt-shift-0 = 'move-node-to-workspace O'
 
 
 alt-shift-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-# alt-tab = 'workspace-back-and-forth'
+alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-# alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode manager'
@@ -199,11 +208,12 @@ if.app-id = 'com.google.Chrome'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.window-title-regex-substring = '^.*\sViet-Anh\s\(enduesoftware.com\)$'
 if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace E'
 
 [[on-window-detected]]
-if.app-id = 'com.microsoft.edgemac'
+if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
