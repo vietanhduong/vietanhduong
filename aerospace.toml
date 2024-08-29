@@ -118,8 +118,8 @@ alt-6 = 'workspace F' # Finder
 alt-9 = 'workspace E' # Endue
 alt-0 = 'workspace O' # Other
 
-alt-b = 'workspace --wrap-around prev'
-alt-f = 'workspace --wrap-around next'
+#alt-b = 'workspace --wrap-around prev'
+#alt-f = 'workspace --wrap-around next'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
