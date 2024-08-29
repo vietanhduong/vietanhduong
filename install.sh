@@ -16,8 +16,9 @@ if ! command -v "brew" &> /dev/null; then
 fi
 
 # install brew packages
-xargs brew install <./brew/leaves
-xargs brew install --cask <./brew/casks
+xargs brew tap <./brew/tap
+xargs brew install <./brew/cli
+xargs brew install --cask <./brew/cask
 
 brew tap homebrew/cask-fonts
 brew install --cask font-iosevka
