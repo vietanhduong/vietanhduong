@@ -6,7 +6,7 @@ config.font = wezterm.font 'SF Mono'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 15.0
 
-config.color_scheme = 'Tomorrow Night (Gogh)'
+config.color_scheme = 'Gruvbox dark, pale (base16)'
 
 --config.colors = {
 --   foreground = "rgb(255,255,255)",
