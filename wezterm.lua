@@ -2,11 +2,11 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font 'SF Mono'
+config.font = wezterm.font 'Fira Code'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 15.0
 
-config.color_scheme = 'Gruvbox dark, pale (base16)'
+config.color_scheme = 'Gruvbox Dark (Gogh)'
 
 --config.colors = {
 --   foreground = "rgb(255,255,255)",
