@@ -20,6 +20,4 @@ google-cloud-sdk
 fzf
 ripgrep
 bat
-btop
-borders
-
+htop
