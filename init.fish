@@ -8,6 +8,7 @@ set -xg USE_GKE_GCLOUD_AUTH_PLUGIN True
 # disable greeting message
 set -g fish_greeting
 
+alias v="nvim"
 alias vim="nvim"
 alias vi="nvim"
 alias tconfig="vim ~/.tmux.conf"
