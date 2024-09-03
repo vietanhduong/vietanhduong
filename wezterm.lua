@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font 'Fira Code'
+config.font = wezterm.font 'Jetbrains Mono'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 15.0
 
