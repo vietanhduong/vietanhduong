@@ -6,7 +6,7 @@ config.font = wezterm.font 'Jetbrains Mono'
 config.harfbuzz_features = { 'calt=0' }
 config.font_size = 15.0
 
-config.color_scheme = 'Gruvbox Dark (Gogh)'
+-- config.color_scheme = 'X::DotShare (terminal.sexy)'
 
 --config.colors = {
 --   foreground = "rgb(255,255,255)",
@@ -41,8 +41,8 @@ config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.bold_brightens_ansi_colors = false
 
 config.window_padding = {
-  left = "0.5cell",
-  right = "0.5cell",
+  left = "1cell",
+  right = "1cell",
   top = "0.5cell",
   bottom = "0.5cell",
 }
