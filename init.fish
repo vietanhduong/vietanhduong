@@ -40,8 +40,6 @@ alias ktun="k tunnel"
 alias ktop="k ktop"
 alias kctx="kubectx"
 alias kns="kubens"
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
 alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
 alias glp="git pull && git push"
@@ -50,14 +48,6 @@ alias todev='ssh dev.local'
 
 alias tg="terragrunt"
 alias tf="terraform"
-
-if test -x /usr/bin/pbcopy
-  alias pbcopy=/usr/bin/pbcopy
-end
-
-if test -x /usr/bin/pbpaste
-  alias pbpaste=/usr/bin/pbpaste
-end
 
 # Minikube
 alias mkk="minikube kubectl --"
@@ -73,6 +63,7 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
 alias grb="git rebase"
+
 
 # color
 set -U fish_color_command green
@@ -208,3 +199,35 @@ function vpn
   end
 end
 
+
+function pbcopy -d "pbcopy over SSH"
+    function on_error --on-event fish_postexec
+        if test $status -ne 0
+            exit 1
+        end
+    end
+
+    if test -n "$SSH_TTY"
+        nc -q1 localhost 2224
+    else if test (uname) = "Darwin"
+        /usr/bin/pbcopy
+    else
+        xsel --clipboard --input
+    end
+end
+
+function pbpaste -d "pbpaste over SSH"
+    function on_error --on-event fish_postexec
+        if test $status -ne 0
+            exit 1
+        end
+    end
+
+    if test -n "$SSH_TTY"
+        nc -q1 -d localhost 2225
+    else if test (uname) = "Darwin"
+        /usr/bin/pbpaste
+    else
+        xsel --clipboard --output
+    end
+end
