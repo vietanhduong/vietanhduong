@@ -202,23 +202,23 @@ run = 'move-node-to-workspace T'
 if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace T'
 
-[[on-window-detected]]
-if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
-if.app-id = 'com.google.Chrome'
-run = ['layout floating']
+#[[on-window-detected]]
+#if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
+#if.app-id = 'com.google.Chrome'
+#run = ['layout floating']
 
 [[on-window-detected]]
 if.window-title-regex-substring = '^.*\sViet-Anh\s\(enduesoftware.com\)$'
 if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace E'
 
-[[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace B'
+#[[on-window-detected]]
+#if.app-id = 'com.google.Chrome'
+#run = 'move-node-to-workspace B'
 
-[[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace B'
+#[[on-window-detected]]
+#if.app-id = 'com.apple.Safari'
+#run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
