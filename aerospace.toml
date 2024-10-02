@@ -202,10 +202,10 @@ run = 'move-node-to-workspace T'
 if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace T'
 
-#[[on-window-detected]]
-#if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
-#if.app-id = 'com.google.Chrome'
-#run = ['layout floating']
+[[on-window-detected]]
+if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
+if.app-id = 'com.google.Chrome'
+run = ['layout floating']
 
 [[on-window-detected]]
 if.window-title-regex-substring = '^.*\sViet-Anh\s\(enduesoftware.com\)$'
