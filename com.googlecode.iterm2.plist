@@ -4,6 +4,8 @@
 <dict>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>ClickToSelectCommand</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>3DDB2327-F763-4E8B-BA4E-A9A9CA6C4BC1</string>
 	<key>EnableDivisionView</key>
