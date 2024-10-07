@@ -145,6 +145,9 @@ alt-shift-m= 'mode manager'
 
 alt-shift-r = 'mode resize'
 
+alt-shift-minus = 'resize smart -50'
+alt-shift-equal = 'resize smart +50'
+
 [mode.resize.binding]
 h = 'resize width -50'
 j = 'resize height +50'
