@@ -20,7 +20,7 @@ after-startup-command = [
 start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = true
+enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
@@ -55,12 +55,12 @@ on-focus-changed = "move-mouse window-lazy-center"
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 10
-inner.vertical = 10
-outer.left = 10
-outer.bottom = 10
-outer.top = 10
-outer.right = 10
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.top = 6
+outer.bottom = 6
+outer.right = 8
 
 
 # 'main' binding mode declaration
@@ -193,13 +193,13 @@ run = 'move-node-to-workspace C'
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace C'
 
-[[on-window-detected]]
-if.app-id = 'com.apple.Terminal'
-run = 'move-node-to-workspace T'
+#[[on-window-detected]]
+#if.app-id = 'com.apple.Terminal'
+#run = 'move-node-to-workspace T'
 
-[[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
-run = 'move-node-to-workspace T'
+#[[on-window-detected]]
+#if.app-id = 'net.kovidgoyal.kitty'
+#run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
 if.app-id = 'com.github.wez.wezterm'
