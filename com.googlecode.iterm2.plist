@@ -1409,7 +1409,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>JetBrainsMono-Regular 14</string>
+			<string>BerkeleyMono-Regular 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3015,7 +3015,7 @@
 	<key>TerminalMargin</key>
 	<integer>2</integer>
 	<key>TerminalVMargin</key>
-	<integer>5</integer>
+	<integer>2</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
