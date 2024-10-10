@@ -1,29 +1,35 @@
 [colors]
 draw_bold_text_with_bright_colors = true
 
-[colors.bright]
-black = '0x3c3836'
-red = '0xea6962'
-green = '0xa9b665'
-yellow = '0xd8a657'
-blue = '0x7daea3'
-magenta = '0xd3869b'
-cyan = '0x89b482'
-white = '0xd4be98'
+# Windows 95 Color Scheme
+# To have the authentic experience in Chicago95 GTK Theme.
 
-[colors.normal]
-black = '0x3c3836'
-red = '0xea6962'
-green = '0xa9b665'
-yellow = '0xd8a657'
-blue = '0x7daea3'
-magenta = '0xd3869b'
-cyan = '0x89b482'
-white = '0xd4be98'
-
+# Default colors
 [colors.primary]
-background = '0x282828'
-foreground = '0xd4be98'
+background = '#000000'
+foreground = '#C0C7C8'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#A80000'
+green   = '#00A800'
+yellow  = '#A85400'
+blue    = '#0000A8'
+magenta = '#A800A8'
+cyan    = '#00A8A8'
+white   = '#A8A8A8'
+
+# Bright colors
+[colors.bright]
+black   = '#545454'
+red     = '#FC5454'
+green   = '#54FC54'
+yellow  = '#FCFC54'
+blue    = '#5454FC'
+magenta = '#FC54FC'
+cyan    = '#54FCFC'
+white   = '#FFFFFF'
 
 [env]
 TERM = "xterm-256color"
@@ -32,20 +38,16 @@ TERM = "xterm-256color"
 size = 14.0
 
 [font.bold]
-family = "SF Mono"
-style = "SemiBold"
+family = "Berkeley Mono"
 
 [font.bold_italic]
-family = "SF Mono"
-style = "Medium Italic"
+family = "Berkeley Mono"
 
 [font.italic]
-family = "SF Mono"
-style = "Light Italic"
+family = "Berkeley Mono"
 
 [font.normal]
-family = "SF Mono"
-style = "Light"
+family = "Berkeley Mono"
 
 [[keyboard.bindings]]
 chars = "\u001BF"
