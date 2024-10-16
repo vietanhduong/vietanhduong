@@ -24,8 +24,13 @@ set foldlevel=2
 set nofoldenable
 set relativenumber
 
+colorscheme vim
+
+set termguicolors&
+
 " hook set comment color is green
 highlight Comment ctermfg=208
+
 
 " visual color
 highlight Visual cterm=none ctermbg=239 ctermfg=NONE
