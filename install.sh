@@ -67,7 +67,14 @@ git config --global alias.root 'rev-parse --show-toplevel'
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # enable font smoothing
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool false
+
+# aerospace moving windows
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# disable opening annimation
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
 
 # make sure xcode already installed
 sudo xcodebuild -license accept
