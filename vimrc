@@ -24,6 +24,7 @@ set foldlevel=2
 set nofoldenable
 set relativenumber
 
+" set colorscheme
 colorscheme vim
 
 set termguicolors&
