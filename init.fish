@@ -63,7 +63,11 @@ alias gb="git branch"
 alias gco="git checkout"
 alias gc="git commit"
 alias grb="git rebase"
+alias gap="git add -p"
 
+if test -d $HOME/go/bin
+  fish_add_path $HOME/go/bin
+end
 
 # color
 set -U fish_color_command green
