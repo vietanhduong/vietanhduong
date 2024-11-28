@@ -12,8 +12,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = [
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=7.0'
+after-startup-command = [ 'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=7.0'
 ]
 
 # Start AeroSpace at login
@@ -109,28 +108,32 @@ alt-shift-l = 'move right'
 # alt-v = "split vertical"
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace W' # Work
-alt-2 = 'workspace T' # Terminal
-alt-3 = 'workspace C' # Chat
-alt-4 = 'workspace B' # Browser
-alt-5 = 'workspace N' # Notes
-alt-6 = 'workspace F' # Finder
-alt-9 = 'workspace E' # Endue
-alt-0 = 'workspace O' # Other
+alt-1 = 'workspace 1' # Work
+alt-2 = 'workspace 2' # Brower
+alt-3 = 'workspace 3' # Chat
+alt-4 = 'workspace 4' # Finder / Notes
+alt-5 = 'workspace 5' #
+alt-6 = 'workspace 6' #
+alt-7 = 'workspace 7' #
+alt-8 = 'workspace 8' #
+alt-9 = 'workspace 9' #
+alt-0 = 'workspace 0' # Other
 
 #alt-b = 'workspace --wrap-around prev'
 #alt-f = 'workspace --wrap-around next'
 
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace W'
-alt-shift-2 = 'move-node-to-workspace T'
-alt-shift-3 = 'move-node-to-workspace C'
-alt-shift-4 = 'move-node-to-workspace B'
-alt-shift-5 = 'move-node-to-workspace N'
-alt-shift-6 = 'move-node-to-workspace F'
-alt-shift-9 = 'move-node-to-workspace E'
-alt-shift-0 = 'move-node-to-workspace O'
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-0 = 'move-node-to-workspace 0'
 
 
 alt-shift-f = 'fullscreen'
@@ -183,27 +186,15 @@ alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-name-regex-substring= 'Telegram'
-run = 'move-node-to-workspace C'
+run = 'move-node-to-workspace 3' # Chat
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
-run = 'move-node-to-workspace C'
+run = 'move-node-to-workspace 3' # Chat
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = 'move-node-to-workspace C'
-
-#[[on-window-detected]]
-#if.app-id = 'com.apple.Terminal'
-#run = 'move-node-to-workspace T'
-
-#[[on-window-detected]]
-#if.app-id = 'net.kovidgoyal.kitty'
-#run = 'move-node-to-workspace T'
-
-[[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = 'move-node-to-workspace T'
+run = 'move-node-to-workspace 3' # Chat
 
 [[on-window-detected]]
 if.window-title-regex-substring = '^(Bitwarden\s-\s.*|Task Manager)$'
@@ -211,39 +202,22 @@ if.app-id = 'com.google.Chrome'
 run = ['layout floating']
 
 [[on-window-detected]]
-if.window-title-regex-substring = '^.*\sViet-Anh\s\(enduesoftware.com\)$'
-if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace E'
-
-#[[on-window-detected]]
-#if.app-id = 'com.google.Chrome'
-#run = 'move-node-to-workspace B'
-
-#[[on-window-detected]]
-#if.app-id = 'com.apple.Safari'
-#run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace N'
+run = 'move-node-to-workspace 4' # Notes / Finder
 
 [[on-window-detected]]
 if.app-name-regex-substring= 'Finder'
-run = ['layout floating', 'move-node-to-workspace F']
+run = ['layout floating', 'move-node-to-workspace 4'] # Notes/Finder
 
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace 1' # Work
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace 1' # Work
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'
-run = 'move-node-to-workspace N'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'ChatGPT'
-run = 'move-node-to-workspace O'
+run = 'move-node-to-workspace 4' # Notes / Finder
 
