@@ -108,16 +108,16 @@ alt-shift-l = 'move right'
 # alt-v = "split vertical"
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1' # Work
-alt-2 = 'workspace 2' # Brower
-alt-3 = 'workspace 3' # Chat
-alt-4 = 'workspace 4' # Finder / Notes
-alt-5 = 'workspace 5' #
-alt-6 = 'workspace 6' #
-alt-7 = 'workspace 7' #
-alt-8 = 'workspace 8' #
-alt-9 = 'workspace 9' #
-alt-0 = 'workspace 0' # Other
+alt-1 = 'workspace 1'   # Work
+alt-2 = 'workspace 2'   # Brower
+alt-3 = 'workspace 3'   # Chat
+alt-4 = 'workspace 4'   # Finder / Notes
+alt-5 = 'workspace 5'   #
+alt-6 = 'workspace 6'   #
+alt-7 = 'workspace 7'   #
+alt-8 = 'workspace 8'   #
+alt-9 = 'workspace 9'   #
+alt-0 = 'workspace 10'  #
 
 #alt-b = 'workspace --wrap-around prev'
 #alt-f = 'workspace --wrap-around next'
@@ -133,7 +133,7 @@ alt-shift-6 = 'move-node-to-workspace 6'
 alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
-alt-shift-0 = 'move-node-to-workspace 0'
+alt-shift-0 = 'move-node-to-workspace 10'
 
 
 alt-shift-f = 'fullscreen'
