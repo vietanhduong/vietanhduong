@@ -21,14 +21,6 @@ alias wk="watch kubectl"
 alias vk="viddy -n1 kubectl"
 alias oapp="open -a"
 alias ll="exa -lag"
-alias t="tmux"
-alias tn="tmux new -s"
-alias ta="tmux a -t"
-alias tl="tmux ls"
-alias tk="tmux kill-session -t"
-alias tka="tmux kill-session -a"
-alias tkat="tmux kill-session -at"
-alias ts="tmux switch -t"
 alias tiga="tig --all"
 alias dc="docker-compose"
 alias dcu="dc up"
@@ -97,7 +89,6 @@ fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 if test -f $HOME/.cargo/env.fish
   source "$HOME/.cargo/env.fish"
 end
-
 
 # cdgd -- change directory to git directory
 # if no input => go to the repo root
@@ -235,3 +226,41 @@ function pbpaste -d "pbpaste over SSH"
         xsel --clipboard --output
     end
 end
+
+
+# Tmux functions
+function _build_tmux_alias
+  set alias_name $argv[1]
+  set tmux_cmd $argv[2]
+  set ts_flag $argv[3]
+  set full_cmd "command tmux $tmux_cmd $ts_flag"
+
+  eval "
+  function $alias_name --wraps='$full_cmd' --description 'alias $alias_name=$full_cmd'
+      # check if the first argument for this function is empty or starts with '-'
+      if test (count \$argv) -eq 0 || test (string sub -l 1 \$argv[1]) = '-'
+          command tmux $tmux_cmd \$argv
+      else
+          $full_cmd \$argv
+      end
+  end
+  "
+end
+
+alias t="tmux"
+alias tksv="command tmux kill-server"
+alias tl="command tmux list-sessions"
+
+alias tmuxconf="$EDITOR $fish_tmux_config"
+# `-t` and `-s` flag for tmux commands require argument
+# so we remove the flag when called without argument and run normally when called with argument
+# see: https://github.com/ohmyzsh/ohmyzsh/issues/12230
+_build_tmux_alias "ta" "attach" "-t"
+_build_tmux_alias "tad" "attach -d" "-t"
+_build_tmux_alias "ts" "switch" "-t"
+_build_tmux_alias "tn" "new-session" "-s"
+_build_tmux_alias "tkss" "kill-session" "-t"
+
+functions -e _build_tmux_alias # remove this function after use
+
+
