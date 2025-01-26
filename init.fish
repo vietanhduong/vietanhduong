@@ -35,7 +35,7 @@ alias kns="kubens"
 alias vg="vagrant"
 alias reset-gpg="gpgconf --kill gpg-agent"
 alias glp="git pull && git push"
-alias sd="sudo shutdown -h now"
+alias sd="sudo shutdown -h"
 alias todev='ssh dev.local'
 
 alias tg="terragrunt"
@@ -83,7 +83,6 @@ end
 fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 ! set -q MANPATH; and set MANPATH ''; set -gx MANPATH "$HOMEBREW_PREFIX/share/man" $MANPATH;
 ! set -q INFOPATH; and set INFOPATH ''; set -gx INFOPATH "$HOMEBREW_PREFIX/share/info" $INFOPATH;
-
 
 # cargo
 if test -f $HOME/.cargo/env.fish
