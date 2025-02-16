@@ -104,11 +104,11 @@ setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
 set -g status-position bottom
 set -g status-bg colour234
 set -g status-fg colour15
-set -g status-left '#[fg=colour11,bold] [#(whoami)@#{host}] '
-set -g status-right '#[fg=colour15,bg=colour8,bold] %d/%m #[fg=colour233,bg=colour7,bold] %H:%M:%S '
+set -g status-left '#[fg=green,bold] #{host} | #[fg=colour15][#S] '
+set -g status-right '#[fg=colour15,bg=colour8,bold] %d/%m #[fg=colour233,bg=colour7,bold] %H:%M '
 set -g status-right-length 50
 set -g status-left-length 30
 setw -g mode-keys vi
 
-setw -g window-status-current-format ' #[bg=colour7,fg=colour233,bold] #I:#W#[fg=colour1]#F '
+setw -g window-status-current-format ' #[fg=yellow,bold] #I:#W#[fg=colour1]#F '
 setw -g window-status-format ' #I:#W#[fg=colour15]#F '
