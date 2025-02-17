@@ -4,6 +4,7 @@ set -U fish_user_paths $fish_user_paths /usr/local/sbin
 set -xg LC_ALL en_US.UTF-8
 set -xg LANG en_US.UTF-8
 set -xg USE_GKE_GCLOUD_AUTH_PLUGIN True
+set -xg CONFIG_DIR $HOME/.config
 
 # disable greeting message
 set -g fish_greeting
