@@ -79,10 +79,6 @@ M.capabilities.textDocument.completion.completionItem = {
 M.diagnostic_config = function()
   local x = vim.diagnostic.severity
 
-  -- vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { fg = "Red" })
-  -- vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn", { fg = "Yellow" })
-  -- vim.api.nvim_set_hl(0, "DiagnosticVirtualTextHint", { fg = "NvimLightGreen" })
-
   vim.diagnostic.config {
     virtual_text = { prefix = "" },
     signs = {
