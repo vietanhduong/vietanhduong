@@ -1,12 +1,14 @@
 require("lazy").setup({
   -- Color scheme
   {
-    "sainnhe/gruvbox-material",
+    -- "sainnhe/gruvbox-material",
+    "ellisonleao/gruvbox.nvim",
+    lazy = false,
     priority = 1000,
-    config = function()
-      vim.g.gruvbox_material_enable_italic = true
-      vim.cmd.colorscheme "gruvbox-material"
-    end,
+    -- config = function()
+    --   vim.g.gruvbox_material_enable_italic = true
+    --   vim.cmd.colorscheme "gruvbox-material"
+    -- end,
   },
 
   -- Detect tabstop and shiftwidth automatically
@@ -21,6 +23,12 @@ require("lazy").setup({
 
   -- Useful plugin to show you pending keybinds.
   { "folke/which-key.nvim", event = "VimEnter" },
+
+  -- Auto pairs
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+  },
 
   -- Fuzzy Finder (files, lsp, etc)
   {
@@ -49,9 +57,6 @@ require("lazy").setup({
   "zbirenbaum/copilot-cmp",
 
   -- LSP Plugins
-  -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
-  -- used for completion, annotations and signatures of Neovim apis
-  { "folke/lazydev.nvim", ft = "lua" },
   {
     -- Main LSP Configuration
     "neovim/nvim-lspconfig",
