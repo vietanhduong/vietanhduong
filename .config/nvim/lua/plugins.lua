@@ -13,6 +13,11 @@ require("lazy").setup({
   "tpope/vim-sleuth",
   -- Adds git related signs to the gutter, as well as utilities for managing changes
   "lewis6991/gitsigns.nvim",
+  -- Lua line
+  "nvim-lualine/lualine.nvim",
+
+  -- LSP Kind
+  "onsails/lspkind.nvim",
 
   -- Useful plugin to show you pending keybinds.
   { "folke/which-key.nvim", event = "VimEnter" },
@@ -36,7 +41,12 @@ require("lazy").setup({
     },
   },
   -- GitHub copilot
-  "github/copilot.vim",
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+  },
+  "zbirenbaum/copilot-cmp",
 
   -- LSP Plugins
   -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins

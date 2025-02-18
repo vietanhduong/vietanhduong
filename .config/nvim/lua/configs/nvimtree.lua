@@ -80,3 +80,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
   end,
 })
+
+require("nvim-tree.api").events.subscribe("TreeOpen", function()
+  vim.wo.statusline = " "
+end)

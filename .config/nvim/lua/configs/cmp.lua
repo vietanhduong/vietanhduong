@@ -2,7 +2,24 @@ local cmp = require "cmp"
 local luasnip = require "luasnip"
 luasnip.config.setup {}
 
+local lspkind = require "lspkind"
+
 cmp.setup {
+  formatting = {
+    format = lspkind.cmp_format {
+      mode = "symbol",
+      symbol_map = { Copilot = "" },
+      maxwidth = {
+        menu = 50,
+        abbr = 50,
+      },
+      ellipsis_char = "...",
+      show_labelDetails = true,
+      before = function(entry, vim_item)
+        return vim_item
+      end,
+    },
+  },
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
@@ -35,6 +52,7 @@ cmp.setup {
       name = "lazydev",
       group_index = 0,
     },
+    { name = "copilot" },
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "path" },

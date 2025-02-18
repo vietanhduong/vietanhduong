@@ -1,1 +1,7 @@
-vim.cmd [[highlight CopilotSuggestion ctermfg=8 guifg=white guibg=#5c6370]]
+require("copilot").setup {
+  panel = { enabled = false },
+  suggestion = { enabled = false },
+  on_status_update = require("lualine").refresh,
+}
+
+require("copilot_cmp").setup()
