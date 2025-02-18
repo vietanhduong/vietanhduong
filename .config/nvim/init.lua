@@ -86,7 +86,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 vim.keymap.set("n", "<leader>e", function()
   vim.diagnostic.open_float(0, { scope = "line" })
-end, { desc = "Show current diagnostic" })
+end, { desc = "Show inline diagnostic" })
 
 -- Nvim Tree
 vim.keymap.set("n", "<C-\\>", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree Window" })
@@ -793,9 +793,9 @@ require("lazy").setup({
           -- Select the [p]revious item
           --["<C-p>"] = cmp.mapping.select_prev_item(),
 
-          -- Scroll the documentation window [b]ack / [f]orward
-          -- ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-          -- ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          -- Scroll the documentation window [n]ext/[p]revious doc
+          ["<C-n>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-p>"] = cmp.mapping.scroll_docs(4),
 
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
