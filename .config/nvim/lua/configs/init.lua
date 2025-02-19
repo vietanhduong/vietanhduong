@@ -1,5 +1,6 @@
 require "configs.colorscheme"
 require "configs.gitsigns"
+require "configs.rooter"
 require "configs.lualine"
 require "configs.which_key"
 require "configs.telescope"
