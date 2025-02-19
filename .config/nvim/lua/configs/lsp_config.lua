@@ -1,15 +1,16 @@
-local lsp = require "configs.lsp.lsp"
+local lsp = require "configs.lsp"
+
+local autocmd = vim.api.nvim_create_autocmd
 
 lsp.defaults()
 
 local lspconfig = require "lspconfig"
 
+-- LSP with default setup, otherwise have to define setup for each server
 local servers = {
   "clangd",
   "gopls",
-  "rust_analyzer",
   "lua_ls",
-  "bashls",
 }
 
 -- lsps with default config
@@ -21,11 +22,14 @@ for _, e in ipairs(servers) do
   }
 end
 
--- Rust
+-- Rust LSP
 lspconfig.rust_analyzer.setup {
   cargo = {
     allFeatures = true,
   },
+  on_attach = lsp.on_attach,
+  on_init = lsp.on_init,
+  capabilities = lsp.capabilities,
 }
 
 -- Bash LSP

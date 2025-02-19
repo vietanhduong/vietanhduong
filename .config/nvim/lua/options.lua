@@ -62,12 +62,6 @@ vim.opt.timeoutlen = 300
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
--- vim.opt.list = true
--- vim.opt.listchars = { tab = ">- ", trail = "·", nbsp = "␣" }
-
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
 
@@ -84,15 +78,15 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 
 -- Highlight trailing space
-vim.o.termguicolors = true
-vim.cmd [[syn on]]
-vim.g.show_whitespace = 1
-if vim.g.show_whitespace then
-  local ag = vim.api.nvim_create_augroup("show_whitespace", { clear = true })
-  vim.api.nvim_create_autocmd("Syntax", {
-    pattern = "*",
-    command = [[syntax match ExtraTrailingWhitespace /\v\s\ze\s*$/ containedin=ALL]],
-    group = ag,
-  })
-  vim.api.nvim_set_hl(0, "ExtraTrailingWhitespace", { bg = "OrangeRed" })
-end
+-- vim.o.termguicolors = true
+-- vim.cmd [[syn on]]
+-- vim.g.show_whitespace = 1
+-- if vim.g.show_whitespace then
+--   local ag = vim.api.nvim_create_augroup("show_whitespace", { clear = true })
+--   vim.api.nvim_create_autocmd("Syntax", {
+--     pattern = "*",
+--     command = [[syntax match ExtraTrailingWhitespace /\v\s\ze\s*$/ containedin=ALL]],
+--     group = ag,
+--   })
+--   vim.api.nvim_set_hl(0, "ExtraTrailingWhitespace", { bg = "OrangeRed" })
+-- end
