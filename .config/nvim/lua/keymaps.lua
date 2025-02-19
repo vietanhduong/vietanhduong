@@ -46,6 +46,14 @@ vim.keymap.set("n", "<leader>9", "9gt", { desc = "Switch to tab 9" })
 vim.keymap.set("n", "<leader>n", "gt", { desc = "Switch to the [N]ext tab" })
 vim.keymap.set("n", "<leader>N", "gT", { desc = "Switch to the previous tab" })
 
+-- Map Ctrl + t to open file in a new tab
+vim.keymap.set("n", "<C-t>", function()
+  vim.api.node.open.tab()
+  vim.cmd "-tabnext"
+  vim.api.tree.toggle()
+  vim.cmd "tabnext"
+end, { desc = "Open new tab" })
+
 -- Shift left/right selected lines
 vim.keymap.set("v", "<Tab>", ">gv", { desc = "Shift selected line(s) to the right" })
 vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Shift selected line(s) to the left" })

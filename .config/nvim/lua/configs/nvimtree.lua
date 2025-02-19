@@ -1,8 +1,24 @@
+local function on_attach(bufnr)
+  local api = require "nvim-tree.api"
+
+  api.events.subscribe("TreeOpen", function()
+    vim.wo.statusline = " "
+  end)
+
+  api.config.mappings.default_on_attach(bufnr)
+
+  -- Map Ctrl + \ to toggle open file tree
+  vim.keymap.set("n", "<C-\\>", ":NvimTreeToggle<CR>", { desc = "nvim tree: toggle tree" })
+  vim.keymap.set("n", "<leader>v", api.node.open.vertical, { desc = "nvim tree: open [v]ertical" })
+  vim.keymap.set("n", "<leader>h", api.node.open.horizontal, { desc = "nvim tree: open [h]orizontal" })
+end
+
 require("nvim-tree").setup {
   filters = { dotfiles = false },
   disable_netrw = true,
   hijack_cursor = true,
   sync_root_with_cwd = true,
+  on_attach = on_attach,
   update_focused_file = {
     enable = true,
     update_root = false,
@@ -33,17 +49,6 @@ require("nvim-tree").setup {
     },
   },
 }
-
--- Map Ctrl + \ to toggle open file tree
-vim.keymap.set("n", "<C-\\>", ":NvimTreeToggle<CR>", { desc = "Toggle Nvim Tree Window" })
-
--- Map Ctrl + t to open file in a new tab
-vim.keymap.set("n", "<C-t>", function()
-  vim.api.node.open.tab()
-  vim.cmd "-tabnext"
-  vim.api.tree.toggle()
-  vim.cmd "tabnext"
-end, { desc = "Open in New Tab" })
 
 local function open_nvim_tree(data)
   local real_file = vim.fn.filereadable(data.file) == 1
@@ -80,7 +85,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
   end,
 })
-
-require("nvim-tree.api").events.subscribe("TreeOpen", function()
-  vim.wo.statusline = " "
-end)
