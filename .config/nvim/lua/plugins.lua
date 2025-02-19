@@ -13,10 +13,13 @@ require("lazy").setup({
 
   -- Detect tabstop and shiftwidth automatically
   "tpope/vim-sleuth",
+
   -- Auto-cd rto root of git project
   "notjedi/nvim-rooter.lua",
+
   -- Adds git related signs to the gutter, as well as utilities for managing changes
   "lewis6991/gitsigns.nvim",
+
   -- Lua line
   "nvim-lualine/lualine.nvim",
 
