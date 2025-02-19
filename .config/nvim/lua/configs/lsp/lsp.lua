@@ -80,15 +80,20 @@ M.diagnostic_config = function()
   local x = vim.diagnostic.severity
 
   vim.diagnostic.config {
-    virtual_text = { prefix = "" },
+    virtual_text = {
+      prefix = function(diag)
+        local tbl = { [x.ERROR] = "E:", [x.WARN] = "W:", [x.INFO] = "I:", [x.HINT] = "H:" }
+        return tbl[diag.severity]
+      end,
+    },
     signs = {
       text = { [x.ERROR] = "󰅙", [x.WARN] = "", [x.INFO] = "󰋼", [x.HINT] = "󰌵" },
-      linehl = {
-        [x.ERROR] = "DiagnosticError",
-        [x.WARN] = "DiagnosticWarn",
-        [x.INFO] = "DiagnosticInfo",
-        [x.HINT] = "DiagnosticHint",
-      },
+      --  linehl = {
+      --    [x.ERROR] = "DiagnosticVirtualTextError",
+      --    [x.WARN] = "DiagnosticVirtualTextWarn",
+      --    [x.INFO] = "DiagnosticVirtualTextInfo",
+      --    [x.HINT] = "DiagnosticVirtualTextHint",
+      --  },
     },
     underline = true,
     float = { border = "single" },

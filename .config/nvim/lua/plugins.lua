@@ -2,7 +2,7 @@ require("lazy").setup({
   -- Color scheme
   {
     -- "sainnhe/gruvbox-material",
-    "ellisonleao/gruvbox.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
     priority = 1000,
     -- config = function()
