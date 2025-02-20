@@ -69,8 +69,10 @@ vim.api.nvim_create_autocmd("Filetype", { pattern = "rust", command = "set color
 -- also, show tabs nicer
 vim.opt.listchars = "tab:^ ,nbsp:¬,extends:»,precedes:«,trail:•"
 
--- copy to system clipboard
-vim.opt.clipboard:append("unnamedplus")
+-- prevent override buffer to system clipboard
+vim.opt.clipboard = ""
+
+-- Use Ctrl+c to copy system clipboard
 vim.keymap.set("v", "<C-c>", "\"+y<CR>", { desc = "Copy selected text to system clipboard" })
 
 -- highlight cursorline
@@ -178,10 +180,10 @@ vim.keymap.set("i", "<F1>", "<Esc>")
 --
 -------------------------------------------------------------------------------
 -- highlight yanked text
-vim.api.nvim_create_autocmd("TextYankPost", {
-  pattern = "*",
-  command = "silent! lua vim.highlight.on_yank({ timeout = 100 })",
-})
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+--   pattern = "*",
+--   command = "silent! lua vim.highlight.on_yank({ timeout = 100 })",
+-- })
 
 -- jump to last edit position on opening file
 vim.api.nvim_create_autocmd("BufReadPost", {

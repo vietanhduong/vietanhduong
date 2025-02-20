@@ -2,10 +2,15 @@ font-family = "MonoLisa Nerd Font"
 
 font-size = 15
 
-theme = "GruvboxDarkHard"
+theme = GruvboxDarkHard
 
-macos-titlebar-style = "native"
+macos-titlebar-style = native
 
-cursor-style = "block"
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
 
+adjust-cell-height = 30%
+
+grapheme-width-method = "unicode"
 
