@@ -1,0 +1,4 @@
+aerospace.toml|s|.aerospace.toml
+tmux.linux|s|.tmux.conf
+init.fish|s|.config/fish/config.fish
+.config/nvim|s|
