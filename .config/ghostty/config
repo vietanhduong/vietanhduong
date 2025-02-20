@@ -1,0 +1,11 @@
+font-family = "MonoLisa Nerd Font"
+
+font-size = 15
+
+theme = "GruvboxDarkHard"
+
+macos-titlebar-style = "native"
+
+cursor-style = "block"
+
+
