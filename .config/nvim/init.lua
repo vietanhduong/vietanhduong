@@ -67,6 +67,7 @@ vim.opt.colorcolumn = "80"
 vim.api.nvim_create_autocmd("Filetype", { pattern = "rust", command = "set colorcolumn=100" })
 -- show more hidden characters
 -- also, show tabs nicer
+vim.opt.list = true
 vim.opt.listchars = "tab:^ ,nbsp:¬,extends:»,precedes:«,trail:•"
 
 -- prevent override buffer to system clipboard
