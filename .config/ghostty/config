@@ -1,16 +1,23 @@
-font-family = "MonoLisa Nerd Font"
+# Colorscheme
+theme = GruvboxDarkHard
+bold-is-bright = true
 
+# Font settings
+font-family = "MonoLisa Nerd Font"
 font-size = 15
 
-theme = GruvboxDarkHard
-
+# Setting MacOs Titlebar 
 macos-titlebar-style = native
 
+# Cursor settings
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
+# Cell Height
 adjust-cell-height = 30%
-
 grapheme-width-method = "unicode"
 
+# Enable link on hover (MacOS: Cmd, Linux: Ctrl)
+# Note: Under Tmux, require Shift + Cmd to open link
+link-url = true
