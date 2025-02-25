@@ -62,6 +62,10 @@ if test -d $HOME/go/bin
   fish_add_path $HOME/go/bin
 end
 
+if type -q fzf
+    eval (fzf --fish)
+end
+
 # color
 set -U fish_color_command green
 set -U fish_color_param white
@@ -89,6 +93,7 @@ fish_add_path -gP "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 if test -f $HOME/.cargo/env.fish
   source "$HOME/.cargo/env.fish"
 end
+
 
 # cdgd -- change directory to git directory
 # if no input => go to the repo root
