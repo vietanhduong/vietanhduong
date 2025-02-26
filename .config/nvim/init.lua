@@ -270,8 +270,9 @@ require("lazy").setup {
         lazy = false,    -- load at start
         priority = 1000, -- load first
         config = function()
-            vim.cmd [[colorscheme gruvbox-dark-hard]]
+            vim.o.termguicolors = true
             vim.o.background = "dark"
+            vim.cmd [[colorscheme gruvbox-dark-hard]]
             -- XXX: hi Normal ctermbg=NONE
             -- Make comments more prominent -- they are important.
             local bools = vim.api.nvim_get_hl(0, { name = "Boolean" })

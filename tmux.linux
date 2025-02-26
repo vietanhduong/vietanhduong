@@ -33,9 +33,8 @@ set -g display-panes-time 2000
 set -g display-time 4000
 
 # {n}vim compability
-set-option -g default-terminal "screen-256color"
-set-option -g terminal-overrides "screen-256color"
-set-option -sa terminal-features ',xterm-256color:RGB'
+set -g default-terminal "tmux-256color"
+set -ag terminal-overrides ",$TERM:RGB"
 
 # bind -n C-l send-keys -R C-l \; clear-history
 
