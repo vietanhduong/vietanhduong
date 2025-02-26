@@ -62,10 +62,6 @@ if test -d $HOME/go/bin
   fish_add_path $HOME/go/bin
 end
 
-if type -q fzf
-    eval (fzf --fish)
-end
-
 # color
 set -U fish_color_command green
 set -U fish_color_param white
